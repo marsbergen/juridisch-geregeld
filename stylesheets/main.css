@@ -1,0 +1,174 @@
+@import url("http://fonts.googleapis.com/css?family=Ubuntu");
+/* line 7, ../sass/main.sass */
+.clear {
+  clear: both;
+}
+
+/* line 10, ../sass/main.sass */
+body {
+  background: #4fc1e9;
+  font-family: Ubuntu;
+  font-size: 48px;
+  color: #fffefe;
+}
+
+/* line 18, ../sass/main.sass */
+h1 {
+  font-size: 48px;
+}
+
+/* line 22, ../sass/main.sass */
+h2 {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+/* line 28, ../sass/main.sass */
+h3 {
+  font-size: 20px;
+  color: #fffefe;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* line 35, ../sass/main.sass */
+p {
+  font-family: Helvetica;
+  font-size: 20px;
+  color: #fffeff;
+  line-height: 30px;
+}
+
+/* line 42, ../sass/main.sass */
+a {
+  font-size: 20px;
+  color: #fffeff;
+  line-height: 30px;
+  text-decoration: none;
+}
+/* line 48, ../sass/main.sass */
+a.button {
+  border: 3px solid #fffefe;
+  padding: 10px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 56, ../sass/main.sass */
+.container {
+  width: 1020px;
+  margin: auto;
+}
+
+/* line 61, ../sass/main.sass */
+header {
+  margin-top: 30px;
+}
+/* line 63, ../sass/main.sass */
+header h1 {
+  margin-bottom: 105px;
+  text-align: center;
+}
+/* line 67, ../sass/main.sass */
+header .headerVisual {
+  float: left;
+  width: 582px;
+}
+/* line 70, ../sass/main.sass */
+header .slogan {
+  float: right;
+  width: 380px;
+}
+
+/* line 76, ../sass/main.sass */
+.explanation {
+  margin-top: 200px;
+}
+/* line 78, ../sass/main.sass */
+.explanation h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 82, ../sass/main.sass */
+.explanation ol li {
+  padding-top: 195px;
+  background-image: url("../images/checklist.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 300px;
+  width: 340px;
+  float: left;
+  font-size: 20px;
+  color: #fffeff;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* line 97, ../sass/main.sass */
+.information {
+  background-image: url("../images/Advocaat.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+/* line 98, ../sass/main.sass */
+.information p {
+  width: 593px;
+}
+/* line 100, ../sass/main.sass */
+.information h2 {
+  margin-bottom: 30px;
+}
+
+/* line 107, ../sass/main.sass */
+.product {
+  margin-top: 195px;
+  text-align: center;
+}
+/* line 110, ../sass/main.sass */
+.product h2 {
+  text-align: center;
+}
+/* line 112, ../sass/main.sass */
+.product h3 {
+  margin-top: 30px;
+  font-family: Ubuntu;
+}
+/* line 115, ../sass/main.sass */
+.product .terms, .product .contract {
+  float: left;
+  padding-top: 305px;
+  width: 490px;
+  height: 450px;
+  background-image: url("../images/terms.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/* line 125, ../sass/main.sass */
+.product .terms a, .product .contract a {
+  margin-top: 30px;
+}
+/* line 127, ../sass/main.sass */
+.product .contract {
+  float: right;
+  background-image: url("../images/contract.png");
+}
+
+/* line 136, ../sass/main.sass */
+.testimonial blockquote {
+  text-align: center;
+}
+/* line 138, ../sass/main.sass */
+.testimonial blockquote p {
+  display: block;
+  text-align: center;
+  font-family: "Ubuntu-Italic";
+  font-size: 48px;
+  line-height: 86px;
+}
+/* line 145, ../sass/main.sass */
+.testimonial blockquote footer {
+  font-size: 30px;
+}

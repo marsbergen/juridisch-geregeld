@@ -1,0 +1,149 @@
+@import "compass/css3"
+@import url("http://fonts.googleapis.com/css?family=Ubuntu")
+$blue: #4FC1E9
+$white: #FFFEFE
+
+
+.clear
+	clear: both
+
+body
+	background: $blue
+	font:
+		family: Ubuntu
+		size: 48px
+	color: $white
+
+
+h1
+	font:
+		size: 48px
+
+h2
+	font:
+		size: 36px
+	line-height: 60px
+
+
+h3
+	font:
+		size: 20px
+	color: $white
+	line-height: 25px
+	text-align: center
+
+p
+	font:
+		family: Helvetica
+		size: 20px
+	color: #FFFEFF
+	line-height: 30px
+
+a
+	font:
+		size: 20px
+	color: #FFFEFF
+	line-height: 30px
+	text-decoration: none
+	&.button 
+		border: 3px solid $white
+		padding: 10px 20px
+		@include border-radius(5px)
+
+
+
+
+.container
+	width: 1020px
+	margin: auto
+
+
+header
+	margin-top: 30px
+	h1
+		margin-bottom: 105px
+		text-align: center
+
+	.headerVisual
+		float: left
+		width: 582px
+	.slogan
+		float: right
+		width: 380px
+
+
+
+.explanation
+	margin-top: 200px
+	h2
+		text-align: center
+		margin-bottom: 30px
+	ol
+		li
+			padding-top: 195px
+			background:
+				image: url("../images/checklist.png")
+				repeat: no-repeat
+				position: top center
+			height: 300px
+			width: 340px
+			float: left
+			font:
+				size: 20px
+			color: #FFFEFF
+			line-height: 30px
+			text-align: center
+
+.information
+	p
+		width: 593px
+	h2
+		margin-bottom: 30px
+	background:
+		image: url("../images/Advocaat.png")
+		repeat: no-repeat
+		position: top right
+
+.product
+	margin-top: 195px
+	text-align: center
+	h2
+		text-align: center
+	h3
+		margin-top: 30px
+		font-family: Ubuntu
+	.terms, .contract
+		float: left
+		padding-top: 305px
+		width: 490px
+		height: 450px
+		background:
+			image: url("../images/terms.png")
+			repeat: no-repeat
+			position: top center
+		p
+		a
+			margin-top: 30px
+	.contract
+		float: right
+		background:
+			image: url("../images/contract.png")
+
+
+
+
+.testimonial
+	blockquote
+		text-align: center
+		p
+			display: block 
+			text-align: center
+			font:
+				family: "Ubuntu-Italic"
+				size: 48px
+			line-height: 86px
+		footer
+			font-size: 30px
+
+
+
