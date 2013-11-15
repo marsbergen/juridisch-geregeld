@@ -79,12 +79,8 @@ header
 		text-align: center
 		margin-bottom: 30px
 	ol
-		li
-			padding-top: 195px
-			background:
-				image: url("../images/checklist.png")
-				repeat: no-repeat
-				position: top center
+		li.questions
+			padding-top: 215px
 			height: 300px
 			width: 340px
 			float: left
@@ -93,22 +89,68 @@ header
 			color: #FFFEFF
 			line-height: 30px
 			text-align: center
+			height: 300px
+			width: 340px
+			background:
+				image: url("../images/checklist.png")
+				repeat: no-repeat
+				position: center 30px
+		li.lawyer
+			padding-top: 215px
+			height: 300px
+			width: 340px
+			float: left
+			font:
+				size: 20px
+			color: #FFFEFF
+			line-height: 30px
+			text-align: center
+			height: 300px
+			width: 340px
+			background:
+				image: url("../images/jurist.png")
+				repeat: no-repeat
+				position: top center
+		li.done
+			padding-top: 215px
+			height: 300px
+			width: 340px
+			float: left
+			font:
+				size: 20px
+			color: #FFFEFF
+			line-height: 30px
+			text-align: center
+			height: 300px
+			width: 340px
+			background:
+				image: url("../images/klaar.png")
+				repeat: no-repeat
+				position: center 30px
 
-.information
-	p
+
+section.information
+	div.content
 		width: 593px
-	h2
-		margin-bottom: 30px
-	background:
-		image: url("../images/Advocaat.png")
-		repeat: no-repeat
-		position: top right
+		float: left
+	div.lawyer
+		float: right
+		background:
+			image: url("../images/Advocaat.png")
+			repeat: no-repeat
+			position: top right
+		padding-top: 314px
+		height: 0
+		overflow: hidden
+		width: 275px
+
 
 .product
-	margin-top: 195px
+	margin-top: 215px
 	text-align: center
 	h2
 		text-align: center
+		padding-bottom: 30px
 	h3
 		margin-top: 30px
 		font-family: Ubuntu
@@ -122,8 +164,9 @@ header
 			repeat: no-repeat
 			position: top center
 		p
-		a
-			margin-top: 30px
+
+			a
+				margin-top: 45px
 	.contract
 		float: right
 		background:
@@ -140,10 +183,41 @@ header
 			text-align: center
 			font:
 				family: "Ubuntu-Italic"
-				size: 48px
-			line-height: 86px
+				size: 35px
+			line-height: 63px
 		footer
-			font-size: 30px
+			padding-top: 20px
+			font-size: 20px
+
+.contact
+	margin-top: 215px
+	text-align: center
+	h2
+		text-align: center
+		padding-bottom: 30px
+	.mail, .phone
+		width: 490px
+		padding-top: 100px
+		height: 200px
+		h2
+			text-align: center
+			padding-bottom: 30px
+		h3
+			margin-top: 30px
+			font-family: Ubuntu
+	.mail
+		float: left
+		background:
+			image: url("../images/mail@2x.png")
+			repeat: no-repeat
+			position: top center
+
+	.phone
+		float: right
+		background:
+			image: url("../images/phone@2x.png")
+			repeat: no-repeat
+			position: top center
 
 
 

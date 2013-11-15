@@ -93,11 +93,8 @@ header .slogan {
   margin-bottom: 30px;
 }
 /* line 82, ../sass/main.sass */
-.explanation ol li {
-  padding-top: 195px;
-  background-image: url("../images/checklist.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+.explanation ol li.questions {
+  padding-top: 215px;
   height: 300px;
   width: 340px;
   float: left;
@@ -105,38 +102,78 @@ header .slogan {
   color: #fffeff;
   line-height: 30px;
   text-align: center;
+  height: 300px;
+  width: 340px;
+  background-image: url("../images/checklist.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+}
+/* line 98, ../sass/main.sass */
+.explanation ol li.lawyer {
+  padding-top: 215px;
+  height: 300px;
+  width: 340px;
+  float: left;
+  font-size: 20px;
+  color: #fffeff;
+  line-height: 30px;
+  text-align: center;
+  height: 300px;
+  width: 340px;
+  background-image: url("../images/jurist.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/* line 114, ../sass/main.sass */
+.explanation ol li.done {
+  padding-top: 215px;
+  height: 300px;
+  width: 340px;
+  float: left;
+  font-size: 20px;
+  color: #fffeff;
+  line-height: 30px;
+  text-align: center;
+  height: 300px;
+  width: 340px;
+  background-image: url("../images/klaar.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
 }
 
-/* line 97, ../sass/main.sass */
-.information {
+/* line 133, ../sass/main.sass */
+section.information div.content {
+  width: 593px;
+  float: left;
+}
+/* line 136, ../sass/main.sass */
+section.information div.lawyer {
+  float: right;
   background-image: url("../images/Advocaat.png");
   background-repeat: no-repeat;
   background-position: top right;
-}
-/* line 98, ../sass/main.sass */
-.information p {
-  width: 593px;
-}
-/* line 100, ../sass/main.sass */
-.information h2 {
-  margin-bottom: 30px;
+  padding-top: 314px;
+  height: 0;
+  overflow: hidden;
+  width: 275px;
 }
 
-/* line 107, ../sass/main.sass */
+/* line 148, ../sass/main.sass */
 .product {
-  margin-top: 195px;
+  margin-top: 215px;
   text-align: center;
 }
-/* line 110, ../sass/main.sass */
+/* line 151, ../sass/main.sass */
 .product h2 {
   text-align: center;
+  padding-bottom: 30px;
 }
-/* line 112, ../sass/main.sass */
+/* line 154, ../sass/main.sass */
 .product h3 {
   margin-top: 30px;
   font-family: Ubuntu;
 }
-/* line 115, ../sass/main.sass */
+/* line 157, ../sass/main.sass */
 .product .terms, .product .contract {
   float: left;
   padding-top: 305px;
@@ -146,29 +183,71 @@ header .slogan {
   background-repeat: no-repeat;
   background-position: top center;
 }
-/* line 125, ../sass/main.sass */
-.product .terms a, .product .contract a {
-  margin-top: 30px;
+/* line 168, ../sass/main.sass */
+.product .terms p a, .product .contract p a {
+  margin-top: 45px;
 }
-/* line 127, ../sass/main.sass */
+/* line 170, ../sass/main.sass */
 .product .contract {
   float: right;
   background-image: url("../images/contract.png");
 }
 
-/* line 136, ../sass/main.sass */
+/* line 179, ../sass/main.sass */
 .testimonial blockquote {
   text-align: center;
 }
-/* line 138, ../sass/main.sass */
+/* line 181, ../sass/main.sass */
 .testimonial blockquote p {
   display: block;
   text-align: center;
   font-family: "Ubuntu-Italic";
-  font-size: 48px;
-  line-height: 86px;
+  font-size: 35px;
+  line-height: 63px;
 }
-/* line 145, ../sass/main.sass */
+/* line 188, ../sass/main.sass */
 .testimonial blockquote footer {
-  font-size: 30px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/* line 192, ../sass/main.sass */
+.contact {
+  margin-top: 215px;
+  text-align: center;
+}
+/* line 195, ../sass/main.sass */
+.contact h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* line 198, ../sass/main.sass */
+.contact .mail, .contact .phone {
+  width: 490px;
+  padding-top: 100px;
+  height: 200px;
+}
+/* line 202, ../sass/main.sass */
+.contact .mail h2, .contact .phone h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* line 205, ../sass/main.sass */
+.contact .mail h3, .contact .phone h3 {
+  margin-top: 30px;
+  font-family: Ubuntu;
+}
+/* line 208, ../sass/main.sass */
+.contact .mail {
+  float: left;
+  background-image: url("../images/mail@2x.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/* line 215, ../sass/main.sass */
+.contact .phone {
+  float: right;
+  background-image: url("../images/phone@2x.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
