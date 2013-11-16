@@ -1,223 +1,304 @@
 @import "compass/css3"
-@import url("http://fonts.googleapis.com/css?family=Ubuntu")
-$blue: #4FC1E9
-$white: #FFFEFE
+@import "_animate"
 
+$margin: 15px
+$font_size: 16px
+
+$blue:     #4FC1E9
+$darkBlue: #1b4351
+$white:    #FFFEFE
+$green:    green
+
+$head_font: "Signika Negative", sans-serif
+$head_weight: 700
+$body_font: "Roboto", sans-serif
 
 .clear
 	clear: both
 
-body
-	background: $blue
+h1, h2, h3
 	font:
-		family: Ubuntu
-		size: 48px
-	color: $white
-
-
-h1
-	font:
-		size: 48px
+		family: $head_font
+		weight: $head_weight
+		size: 3em
+	line-height: 1em
 
 h2
 	font:
-		size: 36px
-	line-height: 60px
-
+		size: 2.5em
+	line-height: 1.25em
 
 h3
 	font:
-		size: 20px
-	color: $white
-	line-height: 25px
-	text-align: center
-
-p
-	font:
-		family: Helvetica
-		size: 20px
-	color: #FFFEFF
-	line-height: 30px
+		size: 1.25em
+	line-height: 1em
 
 a
-	font:
-		size: 20px
-	color: #FFFEFF
-	line-height: 30px
+	color: $white
 	text-decoration: none
-	&.button 
-		border: 3px solid $white
-		padding: 10px 20px
-		@include border-radius(5px)
+	@include transition(all .5s)
+	cursor: pointer
+.button
+	display: inline-block
+	cursor: pointer
+	border: 3px solid $white
+	padding: 10px 20px
+	font-size: 1.25em
+	color: $white
+	@include border-radius(5px)
+	@include transition(all .5s)
+	background-color: rgba(0,0,0,0.1)
+	&:hover
+		background-color: rgba(0,0,0,0.15)
+		color: $white
+	&:active
+		background-color: rgba(0,0,0,0.3)
+		color: $white
 
+body
+	background: $blue
+	font:
+		family: $body_font
+		size: $font_size
+	line-height: 1.5em
+	color: $white
 
-
+header, section
+	margin-bottom: 1000px
+	@include transition(all .1s 0s linear)
 
 .container
-	width: 1020px
+	width: 90%
+	min-width: 1000px
 	margin: auto
 
+.page_menu
+	position: fixed
+	z-index: 11
+	top: 35%
+	right: 15px
+	padding: 0 10px 0 0
+	@include transition(all .3s 0s linear)
+
+.page_menu ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+.page_menu ul li
+	margin: 0
+	padding: 10px 0 10px 15px
+	cursor: pointer
+
+.page_menu ul li a,
+.page_menu ul li a:visited
+	width: 8px
+	height: 8px
+	display: block
+	text-decoration: none
+	@include border-radius(50%)
+	@include transition(background-color .1s linear, border-color .1s linear)
+	background-color: transparent
+	border: 2px solid $white
+
+.page_menu ul li.active a
+	background-color: $white
+
+.nav-title
+	position: absolute
+	right: 10px
+	opacity: 0
+	font-size: 13px
+	text-transform: uppercase
+	white-space: nowrap
+	font:
+		family: $head_font
+		weight: $head_weight
+	font-style: normal
+	text-decoration: none
+	margin-top: -11px
+	padding: 0 0 5px 0
+	-webkit-transition: all .3s cubic-bezier(.23, 1, .32, 1)
+	-moz-transition: all .3s cubic-bezier(.23, 1, .32, 1)
+	-ms-transition: all .3s cubic-bezier(.23, 1, .32, 1)
+	-o-transition: all .3s cubic-bezier(.23, 1, .32, 1)
+	transition: all .3s cubic-bezier(.23, 1, .32, 1)
+	line-height: 32px
+	visibility: hidden
+
+.page_menu li:hover span.nav-title
+	right: 20px
+	opacity: 1
+	z-index: 10
+	padding-right: 15px
+	visibility: visible
 
 header
-	margin-top: 30px
 	h1
-		margin-bottom: 105px
+		margin-bottom: $margin * 4
 		text-align: center
-
 	.headerVisual
+		display: inline-block
+		width: 40%
+		margin: 0 4% 0 8%
 		float: left
-		width: 582px
+		img
+			width: 100%
 	.slogan
+		display: inline-block
+		width: 30%
+		margin: $margin * 4 12% 0 4%
 		float: right
-		width: 380px
-
-
+		h2
+			margin-bottom: $margin * 3
+		.button
+			margin-right: $margin
 
 .explanation
-	margin-top: 200px
 	h2
 		text-align: center
-		margin-bottom: 30px
+		margin-bottom: $margin * 4
 	ol
-		li.questions
-			padding-top: 215px
-			height: 300px
-			width: 340px
-			float: left
+		li
 			font:
-				size: 20px
-			color: #FFFEFF
-			line-height: 30px
-			text-align: center
-			height: 300px
-			width: 340px
-			background:
-				image: url("../images/checklist.png")
-				repeat: no-repeat
-				position: center 30px
-		li.lawyer
-			padding-top: 215px
-			height: 300px
-			width: 340px
+				size: 1.25em
+			width: 20%
+			margin: 0 6%
 			float: left
-			font:
-				size: 20px
 			color: #FFFEFF
-			line-height: 30px
 			text-align: center
-			height: 300px
-			width: 340px
-			background:
-				image: url("../images/jurist.png")
-				repeat: no-repeat
-				position: top center
-		li.done
-			padding-top: 215px
-			height: 300px
-			width: 340px
-			float: left
-			font:
-				size: 20px
-			color: #FFFEFF
-			line-height: 30px
-			text-align: center
-			height: 300px
-			width: 340px
-			background:
-				image: url("../images/klaar.png")
-				repeat: no-repeat
-				position: center 30px
-
+			&:hover
+				div.image
+					+animate(tada, 1.2s, 0)
+			div.image
+				background:
+					repeat: no-repeat
+					position: center 30px
+				padding-top: 235px
+				width: 136px
+				margin: auto
+				@include transition(all .8s)
+		li.questions 
+			div.image
+				background:
+					image: url("../images/checklist.png")
+		li.lawyer 
+			div.image
+				background:
+					image: url("../images/jurist.png")
+				width: 231px
+		li.done 
+			div.image
+				background:
+					image: url("../images/klaar.png")
 
 section.information
 	div.content
-		width: 593px
+		width: 49%
 		float: left
+		margin-left: 10%
+		margin-top: $margin * 2
+		h2
+			margin-bottom: $margin * 2
+		p
+			width: 90%
 	div.lawyer
 		float: right
 		background:
-			image: url("../images/Advocaat.png")
+			image: url("../images/advocaat.png")
 			repeat: no-repeat
 			position: top right
 		padding-top: 314px
 		height: 0
 		overflow: hidden
-		width: 275px
+		width: 22%
+		min-width: 275px
+		margin-right: 15%
 
-
-.product
-	margin-top: 215px
-	text-align: center
+section.product
 	h2
+		padding-top: $margin * 4 // This is a hack
 		text-align: center
-		padding-bottom: 30px
+		padding-bottom: $margin * 2
 	h3
-		margin-top: 30px
-		font-family: Ubuntu
+		margin-top: $margin * 2
 	.terms, .contract
 		float: left
-		padding-top: 305px
-		width: 490px
-		height: 450px
-		background:
-			image: url("../images/terms.png")
-			repeat: no-repeat
-			position: top center
-		p
-
-			a
-				margin-top: 45px
-	.contract
-		float: right
-		background:
-			image: url("../images/contract.png")
-
-
-
-
-.testimonial
-	blockquote
+		width: 29%
+		margin: 0 4% 0 16%
 		text-align: center
+		&:hover
+			.product
+				@include rotate(5deg)
+		.product
+			@include transition(all .2s)
+			background:
+				image: url("../images/terms.png")
+				repeat: no-repeat
+				position: top left
+			padding-top: 290px
+			width: 236px
+			position: relative
+			margin: auto
+			.price_tag
+				position: absolute
+				right: -30px
+				bottom: -30px
+				@include border-radius(50%)
+				width: 75px
+				line-height: 75px
+				text-align: center
+				color: $blue 
+				border: 6px solid rgba($blue, .3)
+				background-color: $white
+				background-color: rgba($white, .8)
+				@include box-shadow(rgba($darkBlue, .3) 2px 2px 0px 0px) 
+		h3
+			margin-top: $margin * 4
+			margin-bottom: $margin
+		.button
+			margin-top: $margin * 2
+	.contract
+		margin: 0 16% 0 4%
+		.product
+			background:
+				image: url("../images/contract.png")
+
+section.testimonial
+	blockquote
+		margin:
+			left: auto
+			right: auto
+			bottom: $margin * 8
+		font-family: $head_font
+		text-align: center
+		width: 80%
 		p
 			display: block 
 			text-align: center
 			font:
-				family: "Ubuntu-Italic"
-				size: 35px
-			line-height: 63px
+				style: italic
+				size: 2.25em
+			line-height: 1.25em
 		footer
-			padding-top: 20px
-			font-size: 20px
+			padding-top: $margin
+			font-size: 1em
 
-.contact
-	margin-top: 215px
-	text-align: center
+section.contact
 	h2
 		text-align: center
-		padding-bottom: 30px
-	.mail, .phone
-		width: 490px
-		padding-top: 100px
-		height: 200px
-		h2
-			text-align: center
-			padding-bottom: 30px
-		h3
-			margin-top: 30px
-			font-family: Ubuntu
+		margin-bottom: $margin * 4
 	.mail
-		float: left
+		width: 80%
+		margin: auto
+		padding-top: 178px
+		text-align: center
 		background:
 			image: url("../images/mail@2x.png")
 			repeat: no-repeat
 			position: top center
-
-	.phone
-		float: right
-		background:
-			image: url("../images/phone@2x.png")
-			repeat: no-repeat
-			position: top center
-
-
-
+		h3
+			margin-top: $margin * 4
+			line-height: 1.5em
+			a
+				display: block

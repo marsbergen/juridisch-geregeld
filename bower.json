@@ -1,0 +1,22 @@
+{
+  "name": "juridischgeregeld.nl",
+  "version": "1.0.0",
+  "homepage": "https://github.com/marsbergen/juridisch-geregeld",
+  "authors": [
+    "Patrick van Marsbergen <patrick@mimbee.nl>"
+  ],
+  "description": "Juridisch geregeld website",
+  "main": "main.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.10.2"
+  }
+}
