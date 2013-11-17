@@ -17,7 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~1.10.2",
-    "jquery-waypoints": "imakewebthings/jquery-waypoints#~2.0.3"
+    "jquery": "~1.10.2"
   }
 }

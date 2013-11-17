@@ -1,0 +1,133 @@
+@import "compass/css3"
+@import "_animate"
+
+@import "_vars"
+$margin: 10px
+
+h1, h2, h3
+	font:
+		size: 2.3em
+	line-height: 1em
+
+h2
+	font:
+		size: 1.6em
+	line-height: 1.25em
+
+h3
+	font:
+		size: 1.2em
+	line-height: 1em
+
+.button
+	font-size: 1.05em
+	padding: $margin * 0.8 $margin
+
+.container
+	min-width: inherit
+	width: 80%
+
+.mobile_clear
+	clear: both
+	float: none
+
+.page_menu
+	display: none
+
+header
+	h1
+		padding-top: $margin * 2
+	.headerVisual
+		width: 60%
+		margin: auto
+		float: none
+		display: block
+	.slogan
+		display: block
+		width: 90%
+		margin-top: $margin * 2
+		float: none
+		text-align: center
+		h2
+			margin-bottom: $margin * 2
+		a.button
+			margin-right: 0
+		a.moreInfo
+			display: block
+			padding: $margin
+
+section.explanation
+	h2
+		padding-top: $margin * 4 
+	ol 
+		li
+			float: none
+			width: 90%
+			margin: 0 0 $margin * 2 0
+			text-align: left 
+			div.image
+				display: inline-block
+				padding-top: 50px
+				width: 75px
+				background-size: contain
+				margin: auto $margin * 2 auto auto
+				float: left
+			span
+				font-size: 0.9em
+
+		li.lawyer 
+			min-width: 75px
+			div.image
+				width: 75px
+
+section.information
+	div.content
+		width: 100%
+		float: none
+		margin: $margin * 2 auto auto auto
+		h2
+			width: 100%
+	.lawyer
+		display: none
+
+section.product
+	.terms, .contract
+		float: none
+		width: 90%
+		margin: auto
+		padding-bottom: $margin * 4
+		margin-bottom: $margin * 4
+		.product
+			padding-top: 200px
+			width: 163px
+			background-size: cover
+			.price_tag
+				position: absolute
+				@include border-radius(50%)
+				width: 40px
+				line-height: 40px
+				right: 0px
+				bottom: 0px
+				font-size: 0.7em
+				border-width: 3px
+		h3
+			margin-top: $margin * 2
+	.terms
+		border-bottom: 1px solid $white
+
+section.testimonial blockquote 
+	margin-bottom: $margin * 4
+	p
+		font-size: 1.5em
+
+section.contact
+	width: 90%
+	margin: auto 
+	.mail
+		img
+			width: 50%
+		h3
+			font-size: 1.1em
+		.button
+			font-size: .8em
+			text-overflow: ellipsis

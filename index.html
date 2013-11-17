@@ -3,15 +3,17 @@
 	<head>
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 			<title>Algemene voorwaarden en contracten, Juridisch Geregeld</title>
 			<!-- <link href="http://fonts.googleapis.com/css?family=Ubuntu" media="screen, projection" rel="stylesheet" type="text/css"> -->
-			<link href='http://fonts.googleapis.com/css?family=Signika+Negative:400,700|Roboto' rel='stylesheet' type='text/css'>
+			<link href="http://fonts.googleapis.com/css?family=Signika+Negative:400,700|Roboto" rel="stylesheet" type="text/css">
 			<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 			<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css">
 			<!--[if IE]>
 				<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css">
 			<![endif]-->
 			<link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+			<link rel="stylesheet" href="stylesheets/mobile.css" type="text/css" media="screen and (max-width : 1000px)">
 	</head>
 	<body>
 		<div class="container">
@@ -43,15 +45,18 @@
 				<ol>
 					<li class="questions">
 						<div class="image"></div>
-						Beantwoord onze simpele vragenlijst
+						<span>Beantwoord onze simpele vragenlijst</span>
+						<div class="mobile_clear"></div>
 					</li>
 					<li class="lawyer">
 						<div class="image"></div>
-						Altijd persoonlijk contact met een van onze juristen
+						<span>Altijd persoonlijk contact met een van onze juristen</span>
+						<div class="mobile_clear"></div>
 					</li>
 					<li class="done">
 						<div class="image"></div>
-						Wij sturen je document per e-mail bij oplevering
+						<span>Wij sturen je document per e-mail bij oplevering</span>
+						<div class="mobile_clear"></div>
 					</li>
 				</ol>
 				<div class="clear"></div>
@@ -111,10 +116,11 @@
 			<section class="contact" id="contact" data-waypoint="6">
 				<h2>Altijd persoonlijk contact met Juridisch Geregeld</h2>
 				<div class="mail">
+					<img src="images/mail@2x.png">
 					<h3>
 						Mail met Anne! 
-						<a href="mailto:anne@juridischgeregeld.nl">anne@juridischgeregeld.nl</a>
 					</h3>
+					<a class="button" href="mailto:anne@juridischgeregeld.nl">anne@juridischgeregeld.nl</a>
 				</div>
 				<!-- <div class="phone"><h3>Bel ons: (020) 84 57 222</h3></div> -->
 			</section>
@@ -126,7 +132,6 @@
 			document.write(unescape("%3Cscript src='/bower_components/jquery/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
 		}
 		</script>
-		<script type="text/javascript" src="bower_components/jquery-waypoints/waypoints.min.js"></script>
 		<script type="text/javascript" src="js/jquery.colorAnimation.js"></script>
 		<script type="text/javascript">
 		$.fn.isOnScreen = function() {
@@ -184,8 +189,6 @@
 					}
 				}
 			});
-
-			
 		});
 
 		$(window).resize(function() {
@@ -206,7 +209,7 @@
 				}
 			});
 
-			$('body').attr('data-waypoint', count); 
+			$('html').attr('data-waypoint', count); 
 		});
 		</script>
 	</body>
