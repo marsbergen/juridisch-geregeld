@@ -3222,12 +3222,12 @@
   }
 }
 
-/* line 16, ../sass/main.sass */
+/* line 19, ../sass/main.sass */
 .clear {
   clear: both;
 }
 
-/* line 19, ../sass/main.sass */
+/* line 22, ../sass/main.sass */
 h1, h2, h3 {
   font-family: "Signika Negative", sans-serif;
   font-weight: 700;
@@ -3235,19 +3235,19 @@ h1, h2, h3 {
   line-height: 1em;
 }
 
-/* line 26, ../sass/main.sass */
+/* line 29, ../sass/main.sass */
 h2 {
   font-size: 2.5em;
   line-height: 1.25em;
 }
 
-/* line 31, ../sass/main.sass */
+/* line 34, ../sass/main.sass */
 h3 {
   font-size: 1.25em;
   line-height: 1em;
 }
 
-/* line 36, ../sass/main.sass */
+/* line 39, ../sass/main.sass */
 a {
   color: #fffefe;
   text-decoration: none;
@@ -3258,7 +3258,7 @@ a {
   cursor: pointer;
 }
 
-/* line 41, ../sass/main.sass */
+/* line 44, ../sass/main.sass */
 .button {
   display: inline-block;
   cursor: pointer;
@@ -3277,27 +3277,56 @@ a {
   transition: all 0.5s;
   background-color: rgba(0, 0, 0, 0.1);
 }
-/* line 51, ../sass/main.sass */
+/* line 54, ../sass/main.sass */
 .button:hover {
   background-color: rgba(0, 0, 0, 0.15);
   color: #fffefe;
 }
-/* line 54, ../sass/main.sass */
+/* line 57, ../sass/main.sass */
 .button:active {
   background-color: rgba(0, 0, 0, 0.3);
   color: #fffefe;
 }
 
-/* line 58, ../sass/main.sass */
+/* line 61, ../sass/main.sass */
 body {
-  background: #4fc1e9;
+  background-color: #4fc1e9;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   color: #fffefe;
+  -webkit-transition: all 0.5s 0s;
+  -webkit-transition-delay: linear;
+  -moz-transition: all 0.5s 0s linear;
+  -o-transition: all 0.5s 0s linear;
+  transition: all 0.5s 0s linear;
+}
+/* line 69, ../sass/main.sass */
+body[data-waypoint='1'] {
+  background-color: #4fc1e9;
+}
+/* line 71, ../sass/main.sass */
+body[data-waypoint='2'] {
+  background-color: #a2c8f5;
+}
+/* line 73, ../sass/main.sass */
+body[data-waypoint='3'] {
+  background-color: #adb2e9;
+}
+/* line 75, ../sass/main.sass */
+body[data-waypoint='4'] {
+  background-color: #cda4d6;
+}
+/* line 77, ../sass/main.sass */
+body[data-waypoint='5'] {
+  background-color: #f5d4ce;
+}
+/* line 79, ../sass/main.sass */
+body[data-waypoint='6'] {
+  background-color: #94e996;
 }
 
-/* line 66, ../sass/main.sass */
+/* line 82, ../sass/main.sass */
 header, section {
   margin-bottom: 1000px;
   -webkit-transition: all 0.1s 0s;
@@ -3307,14 +3336,14 @@ header, section {
   transition: all 0.1s 0s linear;
 }
 
-/* line 70, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 .container {
   width: 90%;
   min-width: 1000px;
   margin: auto;
 }
 
-/* line 75, ../sass/main.sass */
+/* line 91, ../sass/main.sass */
 .page_menu {
   position: fixed;
   z-index: 11;
@@ -3328,21 +3357,21 @@ header, section {
   transition: all 0.3s 0s linear;
 }
 
-/* line 83, ../sass/main.sass */
+/* line 99, ../sass/main.sass */
 .page_menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 88, ../sass/main.sass */
+/* line 104, ../sass/main.sass */
 .page_menu ul li {
   margin: 0;
   padding: 10px 0 10px 15px;
   cursor: pointer;
 }
 
-/* line 93, ../sass/main.sass */
+/* line 109, ../sass/main.sass */
 .page_menu ul li a,
 .page_menu ul li a:visited {
   width: 8px;
@@ -3362,12 +3391,12 @@ header, section {
   border: 2px solid #fffefe;
 }
 
-/* line 104, ../sass/main.sass */
+/* line 120, ../sass/main.sass */
 .page_menu ul li.active a {
   background-color: #fffefe;
 }
 
-/* line 107, ../sass/main.sass */
+/* line 123, ../sass/main.sass */
 .nav-title {
   position: absolute;
   right: 10px;
@@ -3390,7 +3419,7 @@ header, section {
   visibility: hidden;
 }
 
-/* line 129, ../sass/main.sass */
+/* line 145, ../sass/main.sass */
 .page_menu li:hover span.nav-title {
   right: 20px;
   opacity: 1;
@@ -3399,44 +3428,44 @@ header, section {
   visibility: visible;
 }
 
-/* line 137, ../sass/main.sass */
+/* line 153, ../sass/main.sass */
 header h1 {
   margin-bottom: 60px;
   text-align: center;
 }
-/* line 140, ../sass/main.sass */
+/* line 156, ../sass/main.sass */
 header .headerVisual {
   display: inline-block;
   width: 40%;
   margin: 0 4% 0 8%;
   float: left;
 }
-/* line 145, ../sass/main.sass */
+/* line 161, ../sass/main.sass */
 header .headerVisual img {
   width: 100%;
 }
-/* line 147, ../sass/main.sass */
+/* line 163, ../sass/main.sass */
 header .slogan {
   display: inline-block;
   width: 30%;
   margin: 60px 12% 0 4%;
   float: right;
 }
-/* line 152, ../sass/main.sass */
+/* line 168, ../sass/main.sass */
 header .slogan h2 {
   margin-bottom: 45px;
 }
-/* line 154, ../sass/main.sass */
+/* line 170, ../sass/main.sass */
 header .slogan .button {
   margin-right: 15px;
 }
 
-/* line 158, ../sass/main.sass */
+/* line 174, ../sass/main.sass */
 .explanation h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-/* line 162, ../sass/main.sass */
+/* line 178, ../sass/main.sass */
 .explanation ol li {
   font-size: 1.25em;
   width: 20%;
@@ -3445,7 +3474,7 @@ header .slogan .button {
   color: #fffeff;
   text-align: center;
 }
-/* line 171, ../sass/main.sass */
+/* line 187, ../sass/main.sass */
 .explanation ol li:hover div.image {
   -webkit-animation: tada 1.2s 0 ease both;
   -moz-animation: tada 1.2s 0 ease both;
@@ -3453,7 +3482,7 @@ header .slogan .button {
   -o-animation: tada 1.2s 0 ease both;
   animation: tada 1.2s 0 ease both;
 }
-/* line 173, ../sass/main.sass */
+/* line 189, ../sass/main.sass */
 .explanation ol li div.image {
   background-repeat: no-repeat;
   background-position: center 30px;
@@ -3465,36 +3494,36 @@ header .slogan .button {
   -o-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 182, ../sass/main.sass */
+/* line 198, ../sass/main.sass */
 .explanation ol li.questions div.image {
   background-image: url("../images/checklist.png");
 }
-/* line 186, ../sass/main.sass */
+/* line 202, ../sass/main.sass */
 .explanation ol li.lawyer div.image {
   background-image: url("../images/jurist.png");
   width: 231px;
 }
-/* line 191, ../sass/main.sass */
+/* line 207, ../sass/main.sass */
 .explanation ol li.done div.image {
   background-image: url("../images/klaar.png");
 }
 
-/* line 196, ../sass/main.sass */
+/* line 212, ../sass/main.sass */
 section.information div.content {
   width: 49%;
   float: left;
   margin-left: 10%;
   margin-top: 30px;
 }
-/* line 201, ../sass/main.sass */
+/* line 217, ../sass/main.sass */
 section.information div.content h2 {
   margin-bottom: 30px;
 }
-/* line 203, ../sass/main.sass */
+/* line 219, ../sass/main.sass */
 section.information div.content p {
   width: 90%;
 }
-/* line 205, ../sass/main.sass */
+/* line 221, ../sass/main.sass */
 section.information div.lawyer {
   float: right;
   background-image: url("../images/advocaat.png");
@@ -3508,24 +3537,24 @@ section.information div.lawyer {
   margin-right: 15%;
 }
 
-/* line 219, ../sass/main.sass */
+/* line 235, ../sass/main.sass */
 section.product h2 {
   padding-top: 60px;
   text-align: center;
   padding-bottom: 30px;
 }
-/* line 223, ../sass/main.sass */
+/* line 239, ../sass/main.sass */
 section.product h3 {
   margin-top: 30px;
 }
-/* line 225, ../sass/main.sass */
+/* line 241, ../sass/main.sass */
 section.product .terms, section.product .contract {
   float: left;
   width: 29%;
   margin: 0 4% 0 16%;
   text-align: center;
 }
-/* line 231, ../sass/main.sass */
+/* line 247, ../sass/main.sass */
 section.product .terms:hover .product, section.product .contract:hover .product {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
@@ -3533,7 +3562,7 @@ section.product .terms:hover .product, section.product .contract:hover .product 
   -o-transform: rotate(5deg);
   transform: rotate(5deg);
 }
-/* line 233, ../sass/main.sass */
+/* line 249, ../sass/main.sass */
 section.product .terms .product, section.product .contract .product {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -3547,7 +3576,7 @@ section.product .terms .product, section.product .contract .product {
   position: relative;
   margin: auto;
 }
-/* line 243, ../sass/main.sass */
+/* line 259, ../sass/main.sass */
 section.product .terms .product .price_tag, section.product .contract .product .price_tag {
   position: absolute;
   right: -30px;
@@ -3568,25 +3597,25 @@ section.product .terms .product .price_tag, section.product .contract .product .
   -moz-box-shadow: rgba(27, 67, 81, 0.3) 2px 2px 0px 0px;
   box-shadow: rgba(27, 67, 81, 0.3) 2px 2px 0px 0px;
 }
-/* line 256, ../sass/main.sass */
+/* line 272, ../sass/main.sass */
 section.product .terms h3, section.product .contract h3 {
   margin-top: 60px;
   margin-bottom: 15px;
 }
-/* line 259, ../sass/main.sass */
+/* line 275, ../sass/main.sass */
 section.product .terms .button, section.product .contract .button {
   margin-top: 30px;
 }
-/* line 261, ../sass/main.sass */
+/* line 277, ../sass/main.sass */
 section.product .contract {
   margin: 0 16% 0 4%;
 }
-/* line 263, ../sass/main.sass */
+/* line 279, ../sass/main.sass */
 section.product .contract .product {
   background-image: url("../images/contract.png");
 }
 
-/* line 268, ../sass/main.sass */
+/* line 284, ../sass/main.sass */
 section.testimonial blockquote {
   margin-left: auto;
   margin-right: auto;
@@ -3595,7 +3624,7 @@ section.testimonial blockquote {
   text-align: center;
   width: 80%;
 }
-/* line 276, ../sass/main.sass */
+/* line 292, ../sass/main.sass */
 section.testimonial blockquote p {
   display: block;
   text-align: center;
@@ -3603,18 +3632,18 @@ section.testimonial blockquote p {
   font-size: 2.25em;
   line-height: 1.25em;
 }
-/* line 283, ../sass/main.sass */
+/* line 299, ../sass/main.sass */
 section.testimonial blockquote footer {
   padding-top: 15px;
   font-size: 1em;
 }
 
-/* line 288, ../sass/main.sass */
+/* line 304, ../sass/main.sass */
 section.contact h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-/* line 291, ../sass/main.sass */
+/* line 307, ../sass/main.sass */
 section.contact .mail {
   width: 80%;
   margin: auto;
@@ -3624,12 +3653,12 @@ section.contact .mail {
   background-repeat: no-repeat;
   background-position: top center;
 }
-/* line 300, ../sass/main.sass */
+/* line 316, ../sass/main.sass */
 section.contact .mail h3 {
   margin-top: 60px;
   line-height: 1.5em;
 }
-/* line 303, ../sass/main.sass */
+/* line 319, ../sass/main.sass */
 section.contact .mail h3 a {
   display: block;
 }

@@ -25,7 +25,7 @@
 					<li data-menu-item="contact"><a href="#contact"><span class="nav-title">Persoonlijk contact</span></a></li>
 				</ul>
 			</nav>
-			<header id="juridisch-geregeld">
+			<header id="juridisch-geregeld" data-waypoint="1">
 				<h1>Juridisch Geregeld</h1>
 				<div class="headerVisual">
 					<img src="images/header.png" alt="header">
@@ -38,7 +38,7 @@
 				<div class="clear"></div>
 			</header>
 
-			<section class="explanation" id="heldere-uitleg">
+			<section class="explanation" id="heldere-uitleg" data-waypoint="2">
 				<h2>Zonder juridische kennis, direct aan de slag</h2>
 				<ol>
 					<li class="questions">
@@ -57,7 +57,7 @@
 				<div class="clear"></div>
 			</section>
 
-			<section class="information" id="informatie">
+			<section class="information" id="informatie" data-waypoint="3">
 				<div class="content">
 					<h2>Zo hebben wij het juridisch geregeld</h2>
 					<p>
@@ -69,7 +69,7 @@
 			</section>
 
 
-			<section class="product" id="producten">
+			<section class="product" id="producten" data-waypoint="4">
 				<h2>Onze producten</h2>
 				<div class="terms">
 					<div class="product">
@@ -96,7 +96,7 @@
 				<div class="clear"></div>
 			</section>
 
-			<section class="testimonial" id="dit-vinden-onze-klanten">
+			<section class="testimonial" id="dit-vinden-onze-klanten" data-waypoint="5">
 				<blockquote>
 					<p>"Helder, makkelijk in gebruik, zeer betaalbaar en alles bij elkaar!"</p>
 					<footer>&mdash; Anne Burgaud <em>(Mimbee)</em></footer>
@@ -108,7 +108,7 @@
 				<div class="clear"></div>
 			</section>
 
-			<section class="contact" id="contact">
+			<section class="contact" id="contact" data-waypoint="6">
 				<h2>Altijd persoonlijk contact met Juridisch Geregeld</h2>
 				<div class="mail">
 					<h3>
@@ -123,9 +123,11 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript">
 		if (typeof jQuery == 'undefined') {
-			document.write(unescape("%3Cscript src='/bower-components/jquery/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+			document.write(unescape("%3Cscript src='/bower_components/jquery/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
 		}
 		</script>
+		<script type="text/javascript" src="bower_components/jquery-waypoints/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.colorAnimation.js"></script>
 		<script type="text/javascript">
 		$.fn.isOnScreen = function() {
 			var win = $(window);
@@ -182,12 +184,15 @@
 					}
 				}
 			});
+
+			
 		});
 
 		$(window).resize(function() {
 			setHeight();
 		});
 
+		var count;
 		$(window).scroll(function() {
 			$('header, section').each(function(i, element) {
 				if($(this).isOnScreen())
@@ -196,8 +201,12 @@
 					window.history.pushState(id, $(this).attr('title'), '#' + id);
 					$(".page_menu li.active").removeClass('active');
 					$('.page_menu li[data-menu-item="' + id + '"]').addClass('active');
+
+					count = $(this).attr('data-waypoint');
 				}
 			});
+
+			$('body').attr('data-waypoint', count); 
 		});
 		</script>
 	</body>
