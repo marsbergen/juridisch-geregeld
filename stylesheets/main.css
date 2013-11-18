@@ -3217,7 +3217,7 @@ a {
   cursor: pointer;
   border: 3px solid #fffefe;
   padding: 10px 19.5px;
-  font-size: 1.25em;
+  font-size: 1.15em;
   color: #fffefe;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -3251,48 +3251,44 @@ html {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   background-color: #4fc1e9;
-  -webkit-transition: all 0.5s 0s;
-  -webkit-transition-delay: ease-in-out;
-  -moz-transition: all 0.5s 0s ease-in-out;
-  -o-transition: all 0.5s 0s ease-in-out;
-  transition: all 0.5s 0s ease-in-out;
 }
-/* line 62, ../sass/main.sass */
-html[data-waypoint='1'] {
+/* line 61, ../sass/main.sass */
+html[data-waypoint='1'] body {
   background-color: #4fc1e9;
 }
-/* line 64, ../sass/main.sass */
-html[data-waypoint='2'] {
+/* line 63, ../sass/main.sass */
+html[data-waypoint='2'] body {
   background-color: #a2c8f5;
 }
-/* line 66, ../sass/main.sass */
-html[data-waypoint='3'] {
+/* line 65, ../sass/main.sass */
+html[data-waypoint='3'] body {
   background-color: #adb2e9;
 }
-/* line 68, ../sass/main.sass */
-html[data-waypoint='4'] {
+/* line 67, ../sass/main.sass */
+html[data-waypoint='4'] body {
   background-color: #cda4d6;
 }
-/* line 70, ../sass/main.sass */
-html[data-waypoint='5'] {
+/* line 69, ../sass/main.sass */
+html[data-waypoint='5'] body {
   background-color: #f49a6f;
 }
-/* line 72, ../sass/main.sass */
-html[data-waypoint='6'] {
+/* line 71, ../sass/main.sass */
+html[data-waypoint='6'] body {
   background-color: #f6ba5b;
 }
 
-/* line 75, ../sass/main.sass */
+/* line 74, ../sass/main.sass */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.5em;
   color: #fffefe;
+  background-color: #4fc1e9;
   -webkit-transition: all 0.5s 0s;
-  -webkit-transition-delay: linear;
-  -moz-transition: all 0.5s 0s linear;
-  -o-transition: all 0.5s 0s linear;
-  transition: all 0.5s 0s linear;
+  -webkit-transition-delay: ease-in-out;
+  -moz-transition: all 0.5s 0s ease-in-out;
+  -o-transition: all 0.5s 0s ease-in-out;
+  transition: all 0.5s 0s ease-in-out;
 }
 
 /* line 83, ../sass/main.sass */
@@ -3417,7 +3413,7 @@ header .headerVisual img {
 header .slogan {
   display: inline-block;
   width: 30%;
-  margin: 60px 12% 0 4%;
+  margin: 3% 12% 0 4%;
   float: right;
 }
 /* line 169, ../sass/main.sass */
@@ -3532,8 +3528,8 @@ section.product h3 {
 /* line 245, ../sass/main.sass */
 section.product .terms, section.product .contract {
   float: left;
-  width: 29%;
-  margin: 0 4% 0 16%;
+  width: 33%;
+  margin: 0 4% 0 12%;
   text-align: center;
 }
 /* line 251, ../sass/main.sass */
@@ -3588,19 +3584,41 @@ section.product .terms h3, section.product .contract h3 {
   margin-bottom: 15px;
 }
 /* line 283, ../sass/main.sass */
+section.product .terms p, section.product .contract p {
+  min-height: 50px;
+}
+@media screen and (max-width: 1900px) {
+  /* line 283, ../sass/main.sass */
+  section.product .terms p, section.product .contract p {
+    min-height: 80px;
+  }
+}
+@media screen and (max-width: 1325px) {
+  /* line 283, ../sass/main.sass */
+  section.product .terms p, section.product .contract p {
+    min-height: 90px;
+  }
+}
+@media screen and (max-width: 1290px) {
+  /* line 283, ../sass/main.sass */
+  section.product .terms p, section.product .contract p {
+    min-height: 100px;
+  }
+}
+/* line 291, ../sass/main.sass */
 section.product .terms .button, section.product .contract .button {
   margin-top: 30px;
 }
-/* line 285, ../sass/main.sass */
+/* line 293, ../sass/main.sass */
 section.product .contract {
-  margin: 0 16% 0 4%;
+  margin: 0 12% 0 4%;
 }
-/* line 287, ../sass/main.sass */
+/* line 295, ../sass/main.sass */
 section.product .contract .product {
   background-image: url("../images/contract.png");
 }
 
-/* line 292, ../sass/main.sass */
+/* line 300, ../sass/main.sass */
 section.testimonial blockquote {
   margin-left: auto;
   margin-right: auto;
@@ -3609,7 +3627,7 @@ section.testimonial blockquote {
   text-align: center;
   width: 80%;
 }
-/* line 300, ../sass/main.sass */
+/* line 308, ../sass/main.sass */
 section.testimonial blockquote p {
   display: block;
   text-align: center;
@@ -3617,34 +3635,34 @@ section.testimonial blockquote p {
   font-size: 2.25em;
   line-height: 1.25em;
 }
-/* line 307, ../sass/main.sass */
+/* line 315, ../sass/main.sass */
 section.testimonial blockquote footer {
   padding-top: 15px;
   font-size: 1em;
 }
 
-/* line 312, ../sass/main.sass */
+/* line 320, ../sass/main.sass */
 section.contact h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 315, ../sass/main.sass */
+/* line 323, ../sass/main.sass */
 section.contact .mail {
   width: 80%;
   margin: auto;
   text-align: center;
 }
-/* line 319, ../sass/main.sass */
+/* line 327, ../sass/main.sass */
 section.contact .mail img {
   width: 300px;
 }
-/* line 321, ../sass/main.sass */
+/* line 329, ../sass/main.sass */
 section.contact .mail h3 {
   margin-top: 30px;
   margin-bottom: 15px;
   line-height: 1.5em;
 }
-/* line 325, ../sass/main.sass */
+/* line 333, ../sass/main.sass */
 section.contact .mail h3 a.button {
   display: inline-block;
 }

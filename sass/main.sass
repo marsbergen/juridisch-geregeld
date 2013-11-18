@@ -40,7 +40,7 @@ a
 	cursor: pointer
 	border: 3px solid $white
 	padding: $margin / 1.5 $margin * 1.3
-	font-size: 1.25em
+	font-size: 1.15em
 	color: $white
 	@include border-radius(5px)
 	@include transition(all .5s)
@@ -56,7 +56,7 @@ a
 	white-space: nowrap
 
 html
-	@include font-smoothing
+	@include font-smoothing 
 	background-color: $blue
 	&[data-waypoint='1'] body
 		background-color: $blue
@@ -164,7 +164,7 @@ header
 	.slogan
 		display: inline-block
 		width: 30%
-		margin: $margin * 4 12% 0 4%
+		margin: 3% 12% 0 4%
 		float: right
 		h2
 			margin-bottom: $margin * 3
@@ -244,8 +244,8 @@ section.product
 		margin-top: $margin * 2
 	.terms, .contract
 		float: left
-		width: 29%
-		margin: 0 4% 0 16%
+		width: 33%
+		margin: 0 4% 0 12%
 		text-align: center
 		&:hover
 			.product
@@ -291,7 +291,7 @@ section.product
 		.button
 			margin-top: $margin * 2
 	.contract
-		margin: 0 16% 0 4%
+		margin: 0 12% 0 4%
 		.product
 			background:
 				image: url("../images/contract.png")

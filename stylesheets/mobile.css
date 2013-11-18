@@ -3314,37 +3314,41 @@ section.product .terms .product .price_tag, section.product .contract .product .
   border-width: 3px;
 }
 /* line 115, ../sass/mobile.sass */
+section.product .terms p, section.product .contract p {
+  min-height: 70px;
+}
+/* line 117, ../sass/mobile.sass */
 section.product .terms h3, section.product .contract h3 {
   margin-top: 20px;
 }
-/* line 117, ../sass/mobile.sass */
+/* line 119, ../sass/mobile.sass */
 section.product .terms {
   border-bottom: 1px solid #fffefe;
 }
 
-/* line 120, ../sass/mobile.sass */
+/* line 122, ../sass/mobile.sass */
 section.testimonial blockquote {
   margin-bottom: 40px;
 }
-/* line 122, ../sass/mobile.sass */
+/* line 124, ../sass/mobile.sass */
 section.testimonial blockquote p {
   font-size: 1.5em;
 }
 
-/* line 125, ../sass/mobile.sass */
+/* line 127, ../sass/mobile.sass */
 section.contact {
   width: 90%;
   margin: auto;
 }
-/* line 129, ../sass/mobile.sass */
+/* line 131, ../sass/mobile.sass */
 section.contact .mail img {
   width: 50%;
 }
-/* line 131, ../sass/mobile.sass */
+/* line 133, ../sass/mobile.sass */
 section.contact .mail h3 {
   font-size: 1.1em;
 }
-/* line 133, ../sass/mobile.sass */
+/* line 135, ../sass/mobile.sass */
 section.contact .mail .button {
   font-size: 0.8em;
   text-overflow: ellipsis;
