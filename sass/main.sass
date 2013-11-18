@@ -58,18 +58,17 @@ a
 html
 	@include font-smoothing
 	background-color: $blue
-	@include transition(all .5s 0s ease-in-out)
-	&[data-waypoint='1']
+	&[data-waypoint='1'] body
 		background-color: $blue
-	&[data-waypoint='2']
+	&[data-waypoint='2'] body
 		background-color: $lightBlue
-	&[data-waypoint='3']
+	&[data-waypoint='3'] body
 		background-color: $purple
-	&[data-waypoint='4']
+	&[data-waypoint='4'] body
 		background-color: $pink
-	&[data-waypoint='5']
+	&[data-waypoint='5'] body
 		background-color: $lightRed
-	&[data-waypoint='6']
+	&[data-waypoint='6'] body
 		background-color: $lightGreen
 
 body
@@ -78,7 +77,8 @@ body
 		size: $font_size 
 	line-height: 1.5em
 	color: $white
-	@include transition(all .5s 0s linear)
+	background-color: $blue
+	@include transition(all .5s 0s ease-in-out)
 
 header, section
 	margin-bottom: 1000px

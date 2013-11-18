@@ -4,6 +4,21 @@
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+			<meta name="description" content="Juridisch Geregeld biedt ondernemers algemene voorwaarden en arbeidscontracten aan voor een vaste prijs van 150 euro.">
+			<meta name="robots" content="index, follow">
+			<meta property="og:title" content="Algemene voorwaarden en arbeidscontracten voor slechts &euro;150,- juridisch goed geregeld">
+			<meta property="og:type" content="website">
+			<meta property="og:image" content="http://juridischgeregeld.nl/images/advocaat.png">
+			<meta property="og:url" content="http://juridischgeregeld.nl">
+			<meta property="og:description" content="Juridisch Geregeld biedt ondernemers algemene voorwaarden en contracten aan voor een duidelijke prijs. Altijd persoonlijk contact en juridisch geregeld.">
+			<meta property="fb:admins" content="1704682358">
+			<meta property="twitter:card" content="summary">
+			<meta property="twitter:url" content="http://juridischgeregeld.nl">
+			<meta property="twitter:title" content="Algemene voorwaarden en arbeidscontracten voor slechts &euro;150,- juridisch goed geregeld">
+			<meta property="twitter:description" content="Juridisch Geregeld biedt ondernemers algemene voorwaarden en contracten aan voor een duidelijke prijs. Altijd persoonlijk contact en juridisch geregeld.">
+			<meta property="twitter:image" content="http://juridischgeregeld.nl/images/advocaat.png">
+			<link rel="author" href="https://plus.google.com/b/112009707258398489031/112009707258398489031">
+
 			<title>Algemene voorwaarden en contracten, Juridisch Geregeld</title>
 			<!-- <link href="http://fonts.googleapis.com/css?family=Ubuntu" media="screen, projection" rel="stylesheet" type="text/css"> -->
 			<link href="http://fonts.googleapis.com/css?family=Signika+Negative:400,700|Roboto" rel="stylesheet" type="text/css">
@@ -122,7 +137,6 @@
 					</h3>
 					<a class="button" href="mailto:anne@juridischgeregeld.nl">anne@juridischgeregeld.nl</a>
 				</div>
-				<!-- <div class="phone"><h3>Bel ons: (020) 84 57 222</h3></div> -->
 			</section>
 		</div>
 
@@ -133,84 +147,6 @@
 		}
 		</script>
 		<script type="text/javascript" src="js/jquery.colorAnimation.js"></script>
-		<script type="text/javascript">
-		$.fn.isOnScreen = function() {
-			var win = $(window);
-			var viewport = {
-				top : win.scrollTop() - 150,
-				left : win.scrollLeft()
-			};
-			viewport.right = viewport.left + win.width();
-			viewport.bottom = viewport.top + win.height();
-		 
-			var bounds = this.offset();
-			bounds.right = bounds.left + this.outerWidth();
-			bounds.bottom = bounds.top + this.outerHeight();
-		 
-			return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-		};
-		
-		var windowHeight;
-		var originalHeights = [];
-		function setHeight() {
-			windowHeight = $(window).height();
-			$("header, section").each(function(i, element) {
-				if(typeof originalHeights[i] === 'undefined')
-				{
-					originalHeights[i] = $(this).height();
-					$(this).css('min-height', originalHeights[i]);
-					$(this).css('margin-bottom', 0);
-				}
-
-				var marginTop = (windowHeight - originalHeights[i]) / 2;
-				if(marginTop < 0)
-					marginTop = 0;
-
-				$(this).css({
-					paddingTop: marginTop,
-					height: windowHeight - marginTop
-				})
-			});
-		}
-
-		$(document).ready(function() {
-			setHeight();
-
-			$('a[href*=#]:not([href=#])').click(function() {
-				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-					if (target.length) {
-						window.history.pushState(this.hash.slice(1), $(this).attr('title'), '#' + this.hash.slice(1));
-						$('html,body').animate({
-							scrollTop: target.offset().top
-						}, 1000);
-						return false;
-					}
-				}
-			});
-		});
-
-		$(window).resize(function() {
-			setHeight();
-		});
-
-		var count;
-		$(window).scroll(function() {
-			$('header, section').each(function(i, element) {
-				if($(this).isOnScreen())
-				{
-					var id = $(this).attr('id');
-					window.history.pushState(id, $(this).attr('title'), '#' + id);
-					$(".page_menu li.active").removeClass('active');
-					$('.page_menu li[data-menu-item="' + id + '"]').addClass('active');
-
-					count = $(this).attr('data-waypoint');
-				}
-			});
-
-			$('html').attr('data-waypoint', count); 
-		});
-		</script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
