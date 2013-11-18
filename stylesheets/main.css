@@ -748,59 +748,29 @@
 }
 
 @-webkit-keyframes tada {
-  /* line 414, ../sass/_animate.sass */
-  0% {
-    -webkit-transform: scale(1);
-  }
-
   /* line 416, ../sass/_animate.sass */
-  10% {
-    -webkit-transform: scale(0.9) rotate(-3deg);
+  20% {
+    -webkit-transform: rotate(-3deg);
   }
 
   /* line 418, ../sass/_animate.sass */
-  20% {
-    -webkit-transform: scale(0.9) rotate(-3deg);
+  40% {
+    -webkit-transform: rotate(-3deg);
   }
 
   /* line 420, ../sass/_animate.sass */
-  30% {
-    -webkit-transform: scale(1.1) rotate(3deg);
+  60% {
+    -webkit-transform: rotate(3deg);
   }
 
   /* line 422, ../sass/_animate.sass */
-  40% {
-    -webkit-transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 424, ../sass/_animate.sass */
-  50% {
-    -webkit-transform: scale(1.1) rotate(3deg);
-  }
-
-  /* line 426, ../sass/_animate.sass */
-  60% {
-    -webkit-transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 428, ../sass/_animate.sass */
-  70% {
-    -webkit-transform: scale(1.1) rotate(3deg);
-  }
-
-  /* line 430, ../sass/_animate.sass */
   80% {
-    -webkit-transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 432, ../sass/_animate.sass */
-  90% {
-    -webkit-transform: scale(1.1) rotate(3deg);
+    -webkit-transform: rotate(-3deg);
   }
 
   /* line 434, ../sass/_animate.sass */
   100% {
-    -webkit-transform: scale(1) rotate(0);
+    -webkit-transform: rotate(0);
   }
 }
 
@@ -1554,59 +1524,54 @@
 }
 
 @-moz-keyframes tada {
-  /* line 842, ../sass/_animate.sass */
-  0% {
-    -moz-transform: scale(1);
-  }
-
   /* line 844, ../sass/_animate.sass */
   10% {
-    -moz-transform: scale(0.9) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 846, ../sass/_animate.sass */
   20% {
-    -moz-transform: scale(0.9) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 848, ../sass/_animate.sass */
   30% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    -moz-transform: rotate(3deg);
   }
 
   /* line 850, ../sass/_animate.sass */
   40% {
-    -moz-transform: scale(1.1) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 852, ../sass/_animate.sass */
   50% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    -moz-transform: rotate(3deg);
   }
 
   /* line 854, ../sass/_animate.sass */
   60% {
-    -moz-transform: scale(1.1) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 856, ../sass/_animate.sass */
   70% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    -moz-transform: rotate(3deg);
   }
 
   /* line 858, ../sass/_animate.sass */
   80% {
-    -moz-transform: scale(1.1) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 860, ../sass/_animate.sass */
   90% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    -moz-transform: rotate(3deg);
   }
 
   /* line 862, ../sass/_animate.sass */
   100% {
-    -moz-transform: scale(1) rotate(0);
+    -moz-transform: rotate(0);
   }
 }
 
@@ -3166,59 +3131,29 @@
 }
 
 @keyframes tada {
-  /* line 1698, ../sass/_animate.sass */
-  0% {
-    transform: scale(1);
-  }
-
   /* line 1700, ../sass/_animate.sass */
   10% {
-    transform: scale(0.9) rotate(-3deg);
+    transform: rotate(-3deg);
   }
 
   /* line 1702, ../sass/_animate.sass */
   20% {
-    transform: scale(0.9) rotate(-3deg);
+    transform: rotate(-3deg);
   }
 
   /* line 1704, ../sass/_animate.sass */
   30% {
-    transform: scale(1.1) rotate(3deg);
+    transform: rotate(3deg);
   }
 
   /* line 1706, ../sass/_animate.sass */
   40% {
-    transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 1708, ../sass/_animate.sass */
-  50% {
-    transform: scale(1.1) rotate(3deg);
-  }
-
-  /* line 1710, ../sass/_animate.sass */
-  60% {
-    transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 1712, ../sass/_animate.sass */
-  70% {
-    transform: scale(1.1) rotate(3deg);
-  }
-
-  /* line 1714, ../sass/_animate.sass */
-  80% {
-    transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 1716, ../sass/_animate.sass */
-  90% {
-    transform: scale(1.1) rotate(3deg);
+    transform: rotate(-3deg);
   }
 
   /* line 1718, ../sass/_animate.sass */
   100% {
-    transform: scale(1) rotate(0);
+    transform: rotate(0);
   }
 }
 
@@ -3307,6 +3242,11 @@ a {
 }
 
 /* line 55, ../sass/main.sass */
+.splitfix {
+  white-space: nowrap;
+}
+
+/* line 58, ../sass/main.sass */
 html {
   background-color: #4fc1e9;
   -webkit-transition: all 0.5s 0s;
@@ -3315,32 +3255,32 @@ html {
   -o-transition: all 0.5s 0s ease-in-out;
   transition: all 0.5s 0s ease-in-out;
 }
-/* line 58, ../sass/main.sass */
+/* line 61, ../sass/main.sass */
 html[data-waypoint='1'] {
   background-color: #4fc1e9;
 }
-/* line 60, ../sass/main.sass */
+/* line 63, ../sass/main.sass */
 html[data-waypoint='2'] {
   background-color: #a2c8f5;
 }
-/* line 62, ../sass/main.sass */
+/* line 65, ../sass/main.sass */
 html[data-waypoint='3'] {
   background-color: #adb2e9;
 }
-/* line 64, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 html[data-waypoint='4'] {
   background-color: #cda4d6;
 }
-/* line 66, ../sass/main.sass */
+/* line 69, ../sass/main.sass */
 html[data-waypoint='5'] {
-  background-color: #f5d4ce;
+  background-color: #f49a6f;
 }
-/* line 68, ../sass/main.sass */
+/* line 71, ../sass/main.sass */
 html[data-waypoint='6'] {
-  background-color: #94e996;
+  background-color: #f6ba5b;
 }
 
-/* line 71, ../sass/main.sass */
+/* line 74, ../sass/main.sass */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -3353,7 +3293,7 @@ body {
   transition: all 0.5s 0s linear;
 }
 
-/* line 79, ../sass/main.sass */
+/* line 82, ../sass/main.sass */
 header, section {
   margin-bottom: 1000px;
   -webkit-transition: all 0.1s 0s;
@@ -3363,14 +3303,14 @@ header, section {
   transition: all 0.1s 0s linear;
 }
 
-/* line 83, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 .container {
   width: 90%;
   min-width: 1000px;
   margin: auto;
 }
 
-/* line 88, ../sass/main.sass */
+/* line 91, ../sass/main.sass */
 .page_menu {
   position: fixed;
   z-index: 11;
@@ -3384,21 +3324,21 @@ header, section {
   transition: all 0.3s 0s linear;
 }
 
-/* line 96, ../sass/main.sass */
+/* line 99, ../sass/main.sass */
 .page_menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 101, ../sass/main.sass */
+/* line 104, ../sass/main.sass */
 .page_menu ul li {
   margin: 0;
   padding: 10px 0 10px 15px;
   cursor: pointer;
 }
 
-/* line 106, ../sass/main.sass */
+/* line 109, ../sass/main.sass */
 .page_menu ul li a,
 .page_menu ul li a:visited {
   width: 8px;
@@ -3418,12 +3358,12 @@ header, section {
   border: 2px solid #fffefe;
 }
 
-/* line 117, ../sass/main.sass */
+/* line 120, ../sass/main.sass */
 .page_menu ul li.active a {
   background-color: #fffefe;
 }
 
-/* line 120, ../sass/main.sass */
+/* line 123, ../sass/main.sass */
 .nav-title {
   position: absolute;
   right: 10px;
@@ -3446,7 +3386,7 @@ header, section {
   visibility: hidden;
 }
 
-/* line 142, ../sass/main.sass */
+/* line 145, ../sass/main.sass */
 .page_menu li:hover span.nav-title {
   right: 20px;
   opacity: 1;
@@ -3455,44 +3395,44 @@ header, section {
   visibility: visible;
 }
 
-/* line 150, ../sass/main.sass */
+/* line 153, ../sass/main.sass */
 header h1 {
   margin-bottom: 60px;
   text-align: center;
 }
-/* line 153, ../sass/main.sass */
+/* line 156, ../sass/main.sass */
 header .headerVisual {
   display: inline-block;
   width: 40%;
   margin: 0 4% 0 8%;
   float: left;
 }
-/* line 158, ../sass/main.sass */
+/* line 161, ../sass/main.sass */
 header .headerVisual img {
   width: 100%;
 }
-/* line 160, ../sass/main.sass */
+/* line 163, ../sass/main.sass */
 header .slogan {
   display: inline-block;
   width: 30%;
   margin: 60px 12% 0 4%;
   float: right;
 }
-/* line 165, ../sass/main.sass */
+/* line 168, ../sass/main.sass */
 header .slogan h2 {
   margin-bottom: 45px;
 }
-/* line 167, ../sass/main.sass */
+/* line 170, ../sass/main.sass */
 header .slogan .button {
   margin-right: 15px;
 }
 
-/* line 171, ../sass/main.sass */
+/* line 174, ../sass/main.sass */
 section.explanation h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-/* line 175, ../sass/main.sass */
+/* line 178, ../sass/main.sass */
 section.explanation ol li {
   width: 20%;
   min-width: 136px;
@@ -3501,15 +3441,15 @@ section.explanation ol li {
   color: #fffeff;
   text-align: center;
 }
-/* line 183, ../sass/main.sass */
+/* line 186, ../sass/main.sass */
 section.explanation ol li:hover div.image {
-  -webkit-animation: tada 1.2s 0 ease both;
-  -moz-animation: tada 1.2s 0 ease both;
-  -ms-animation: tada 1.2s 0 ease both;
-  -o-animation: tada 1.2s 0 ease both;
-  animation: tada 1.2s 0 ease both;
+  -webkit-animation: tada 0.6s 0 ease both;
+  -moz-animation: tada 0.6s 0 ease both;
+  -ms-animation: tada 0.6s 0 ease both;
+  -o-animation: tada 0.6s 0 ease both;
+  animation: tada 0.6s 0 ease both;
 }
-/* line 185, ../sass/main.sass */
+/* line 188, ../sass/main.sass */
 section.explanation ol li div.image {
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -3521,45 +3461,46 @@ section.explanation ol li div.image {
   -o-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 194, ../sass/main.sass */
+/* line 197, ../sass/main.sass */
 section.explanation ol li.questions div.image {
   background-image: url("../images/checklist.png");
 }
-/* line 197, ../sass/main.sass */
+/* line 200, ../sass/main.sass */
 section.explanation ol li.lawyer {
   min-width: 231px;
 }
-/* line 199, ../sass/main.sass */
+/* line 202, ../sass/main.sass */
 section.explanation ol li.lawyer div.image {
   background-image: url("../images/jurist.png");
   width: 231px;
 }
-/* line 204, ../sass/main.sass */
+/* line 207, ../sass/main.sass */
 section.explanation ol li.done div.image {
   background-image: url("../images/klaar.png");
 }
 
-/* line 209, ../sass/main.sass */
+/* line 212, ../sass/main.sass */
 section.information div.content {
   width: 49%;
   float: left;
   margin-left: 9%;
   margin-top: 30px;
 }
-/* line 214, ../sass/main.sass */
+/* line 217, ../sass/main.sass */
 section.information div.content h2 {
   margin-bottom: 30px;
 }
-/* line 216, ../sass/main.sass */
+/* line 219, ../sass/main.sass */
 section.information div.content p {
   width: 90%;
 }
-/* line 218, ../sass/main.sass */
+/* line 221, ../sass/main.sass */
 section.information div.lawyer {
   float: right;
   background-image: url("../images/advocaat.png");
   background-repeat: no-repeat;
   background-position: top right;
+  background-image: url("../images/advocaat.png");
   padding-top: 314px;
   height: 0;
   overflow: hidden;
@@ -3567,25 +3508,32 @@ section.information div.lawyer {
   min-width: 275px;
   margin-right: 14%;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+  /* line 20, ../sass/_vars.sass */
+  section.information div.lawyer {
+    background-image: url("../images/advocaat@2x.png");
+    background-size: 275px 314px;
+  }
+}
 
-/* line 232, ../sass/main.sass */
+/* line 236, ../sass/main.sass */
 section.product h2 {
   padding-top: 60px;
   text-align: center;
   padding-bottom: 30px;
 }
-/* line 236, ../sass/main.sass */
+/* line 240, ../sass/main.sass */
 section.product h3 {
   margin-top: 30px;
 }
-/* line 238, ../sass/main.sass */
+/* line 242, ../sass/main.sass */
 section.product .terms, section.product .contract {
   float: left;
   width: 29%;
   margin: 0 4% 0 16%;
   text-align: center;
 }
-/* line 244, ../sass/main.sass */
+/* line 248, ../sass/main.sass */
 section.product .terms:hover .product, section.product .contract:hover .product {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
@@ -3593,7 +3541,7 @@ section.product .terms:hover .product, section.product .contract:hover .product 
   -o-transform: rotate(5deg);
   transform: rotate(5deg);
 }
-/* line 246, ../sass/main.sass */
+/* line 250, ../sass/main.sass */
 section.product .terms .product, section.product .contract .product {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -3607,7 +3555,7 @@ section.product .terms .product, section.product .contract .product {
   position: relative;
   margin: auto;
 }
-/* line 256, ../sass/main.sass */
+/* line 260, ../sass/main.sass */
 section.product .terms .product .price_tag, section.product .contract .product .price_tag {
   position: absolute;
   right: -30px;
@@ -3631,25 +3579,25 @@ section.product .terms .product .price_tag, section.product .contract .product .
   font-weight: 700;
   font-size: 1.5em;
 }
-/* line 273, ../sass/main.sass */
+/* line 277, ../sass/main.sass */
 section.product .terms h3, section.product .contract h3 {
   margin-top: 60px;
   margin-bottom: 15px;
 }
-/* line 276, ../sass/main.sass */
+/* line 280, ../sass/main.sass */
 section.product .terms .button, section.product .contract .button {
   margin-top: 30px;
 }
-/* line 278, ../sass/main.sass */
+/* line 282, ../sass/main.sass */
 section.product .contract {
   margin: 0 16% 0 4%;
 }
-/* line 280, ../sass/main.sass */
+/* line 284, ../sass/main.sass */
 section.product .contract .product {
   background-image: url("../images/contract.png");
 }
 
-/* line 285, ../sass/main.sass */
+/* line 289, ../sass/main.sass */
 section.testimonial blockquote {
   margin-left: auto;
   margin-right: auto;
@@ -3658,7 +3606,7 @@ section.testimonial blockquote {
   text-align: center;
   width: 80%;
 }
-/* line 293, ../sass/main.sass */
+/* line 297, ../sass/main.sass */
 section.testimonial blockquote p {
   display: block;
   text-align: center;
@@ -3666,34 +3614,34 @@ section.testimonial blockquote p {
   font-size: 2.25em;
   line-height: 1.25em;
 }
-/* line 300, ../sass/main.sass */
+/* line 304, ../sass/main.sass */
 section.testimonial blockquote footer {
   padding-top: 15px;
   font-size: 1em;
 }
 
-/* line 305, ../sass/main.sass */
+/* line 309, ../sass/main.sass */
 section.contact h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 308, ../sass/main.sass */
+/* line 312, ../sass/main.sass */
 section.contact .mail {
   width: 80%;
   margin: auto;
   text-align: center;
 }
-/* line 312, ../sass/main.sass */
+/* line 316, ../sass/main.sass */
 section.contact .mail img {
   width: 300px;
 }
-/* line 314, ../sass/main.sass */
+/* line 318, ../sass/main.sass */
 section.contact .mail h3 {
   margin-top: 30px;
   margin-bottom: 15px;
   line-height: 1.5em;
 }
-/* line 318, ../sass/main.sass */
+/* line 322, ../sass/main.sass */
 section.contact .mail h3 a.button {
-  display: inlineblock;
+  display: inline-block;
 }

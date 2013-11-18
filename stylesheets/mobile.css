@@ -748,59 +748,29 @@
 }
 
 @-webkit-keyframes tada {
-  /* line 414, ../sass/_animate.sass */
-  0% {
-    -webkit-transform: scale(1);
-  }
-
   /* line 416, ../sass/_animate.sass */
-  10% {
-    -webkit-transform: scale(0.9) rotate(-3deg);
+  20% {
+    -webkit-transform: rotate(-3deg);
   }
 
   /* line 418, ../sass/_animate.sass */
-  20% {
-    -webkit-transform: scale(0.9) rotate(-3deg);
+  40% {
+    -webkit-transform: rotate(-3deg);
   }
 
   /* line 420, ../sass/_animate.sass */
-  30% {
-    -webkit-transform: scale(1.1) rotate(3deg);
+  60% {
+    -webkit-transform: rotate(3deg);
   }
 
   /* line 422, ../sass/_animate.sass */
-  40% {
-    -webkit-transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 424, ../sass/_animate.sass */
-  50% {
-    -webkit-transform: scale(1.1) rotate(3deg);
-  }
-
-  /* line 426, ../sass/_animate.sass */
-  60% {
-    -webkit-transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 428, ../sass/_animate.sass */
-  70% {
-    -webkit-transform: scale(1.1) rotate(3deg);
-  }
-
-  /* line 430, ../sass/_animate.sass */
   80% {
-    -webkit-transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 432, ../sass/_animate.sass */
-  90% {
-    -webkit-transform: scale(1.1) rotate(3deg);
+    -webkit-transform: rotate(-3deg);
   }
 
   /* line 434, ../sass/_animate.sass */
   100% {
-    -webkit-transform: scale(1) rotate(0);
+    -webkit-transform: rotate(0);
   }
 }
 
@@ -1554,59 +1524,54 @@
 }
 
 @-moz-keyframes tada {
-  /* line 842, ../sass/_animate.sass */
-  0% {
-    -moz-transform: scale(1);
-  }
-
   /* line 844, ../sass/_animate.sass */
   10% {
-    -moz-transform: scale(0.9) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 846, ../sass/_animate.sass */
   20% {
-    -moz-transform: scale(0.9) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 848, ../sass/_animate.sass */
   30% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    -moz-transform: rotate(3deg);
   }
 
   /* line 850, ../sass/_animate.sass */
   40% {
-    -moz-transform: scale(1.1) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 852, ../sass/_animate.sass */
   50% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    -moz-transform: rotate(3deg);
   }
 
   /* line 854, ../sass/_animate.sass */
   60% {
-    -moz-transform: scale(1.1) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 856, ../sass/_animate.sass */
   70% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    -moz-transform: rotate(3deg);
   }
 
   /* line 858, ../sass/_animate.sass */
   80% {
-    -moz-transform: scale(1.1) rotate(-3deg);
+    -moz-transform: rotate(-3deg);
   }
 
   /* line 860, ../sass/_animate.sass */
   90% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    -moz-transform: rotate(3deg);
   }
 
   /* line 862, ../sass/_animate.sass */
   100% {
-    -moz-transform: scale(1) rotate(0);
+    -moz-transform: rotate(0);
   }
 }
 
@@ -3166,59 +3131,29 @@
 }
 
 @keyframes tada {
-  /* line 1698, ../sass/_animate.sass */
-  0% {
-    transform: scale(1);
-  }
-
   /* line 1700, ../sass/_animate.sass */
   10% {
-    transform: scale(0.9) rotate(-3deg);
+    transform: rotate(-3deg);
   }
 
   /* line 1702, ../sass/_animate.sass */
   20% {
-    transform: scale(0.9) rotate(-3deg);
+    transform: rotate(-3deg);
   }
 
   /* line 1704, ../sass/_animate.sass */
   30% {
-    transform: scale(1.1) rotate(3deg);
+    transform: rotate(3deg);
   }
 
   /* line 1706, ../sass/_animate.sass */
   40% {
-    transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 1708, ../sass/_animate.sass */
-  50% {
-    transform: scale(1.1) rotate(3deg);
-  }
-
-  /* line 1710, ../sass/_animate.sass */
-  60% {
-    transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 1712, ../sass/_animate.sass */
-  70% {
-    transform: scale(1.1) rotate(3deg);
-  }
-
-  /* line 1714, ../sass/_animate.sass */
-  80% {
-    transform: scale(1.1) rotate(-3deg);
-  }
-
-  /* line 1716, ../sass/_animate.sass */
-  90% {
-    transform: scale(1.1) rotate(3deg);
+    transform: rotate(-3deg);
   }
 
   /* line 1718, ../sass/_animate.sass */
   100% {
-    transform: scale(1) rotate(0);
+    transform: rotate(0);
   }
 }
 
@@ -3320,31 +3255,31 @@ section.explanation ol li div.image {
 section.explanation ol li span {
   font-size: 0.9em;
 }
-/* line 78, ../sass/mobile.sass */
+/* line 77, ../sass/mobile.sass */
 section.explanation ol li.lawyer {
   min-width: 75px;
 }
-/* line 80, ../sass/mobile.sass */
+/* line 79, ../sass/mobile.sass */
 section.explanation ol li.lawyer div.image {
   width: 75px;
 }
 
-/* line 84, ../sass/mobile.sass */
+/* line 83, ../sass/mobile.sass */
 section.information div.content {
   width: 100%;
   float: none;
   margin: 20px auto auto auto;
 }
-/* line 88, ../sass/mobile.sass */
+/* line 87, ../sass/mobile.sass */
 section.information div.content h2 {
   width: 100%;
 }
-/* line 90, ../sass/mobile.sass */
+/* line 89, ../sass/mobile.sass */
 section.information .lawyer {
   display: none;
 }
 
-/* line 94, ../sass/mobile.sass */
+/* line 93, ../sass/mobile.sass */
 section.product .terms, section.product .contract {
   float: none;
   width: 90%;
@@ -3352,13 +3287,13 @@ section.product .terms, section.product .contract {
   padding-bottom: 40px;
   margin-bottom: 40px;
 }
-/* line 100, ../sass/mobile.sass */
+/* line 99, ../sass/mobile.sass */
 section.product .terms .product, section.product .contract .product {
   padding-top: 200px;
   width: 163px;
   background-size: cover;
 }
-/* line 104, ../sass/mobile.sass */
+/* line 103, ../sass/mobile.sass */
 section.product .terms .product .price_tag, section.product .contract .product .price_tag {
   position: absolute;
   -webkit-border-radius: 50%;
@@ -3373,38 +3308,38 @@ section.product .terms .product .price_tag, section.product .contract .product .
   font-size: 0.7em;
   border-width: 3px;
 }
-/* line 113, ../sass/mobile.sass */
+/* line 112, ../sass/mobile.sass */
 section.product .terms h3, section.product .contract h3 {
   margin-top: 20px;
 }
-/* line 115, ../sass/mobile.sass */
+/* line 114, ../sass/mobile.sass */
 section.product .terms {
   border-bottom: 1px solid #fffefe;
 }
 
-/* line 118, ../sass/mobile.sass */
+/* line 117, ../sass/mobile.sass */
 section.testimonial blockquote {
   margin-bottom: 40px;
 }
-/* line 120, ../sass/mobile.sass */
+/* line 119, ../sass/mobile.sass */
 section.testimonial blockquote p {
   font-size: 1.5em;
 }
 
-/* line 123, ../sass/mobile.sass */
+/* line 122, ../sass/mobile.sass */
 section.contact {
   width: 90%;
   margin: auto;
 }
-/* line 127, ../sass/mobile.sass */
+/* line 126, ../sass/mobile.sass */
 section.contact .mail img {
   width: 50%;
 }
-/* line 129, ../sass/mobile.sass */
+/* line 128, ../sass/mobile.sass */
 section.contact .mail h3 {
   font-size: 1.1em;
 }
-/* line 131, ../sass/mobile.sass */
+/* line 130, ../sass/mobile.sass */
 section.contact .mail .button {
   font-size: 0.8em;
   text-overflow: ellipsis;

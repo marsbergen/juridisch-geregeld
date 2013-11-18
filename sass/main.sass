@@ -52,6 +52,9 @@ a
 		background-color: rgba(0,0,0,0.3)
 		color: $white
 
+.splitfix
+	white-space: nowrap
+
 html
 	background-color: $blue
 	@include transition(all .5s 0s ease-in-out)
@@ -181,7 +184,7 @@ section.explanation
 			text-align: center
 			&:hover
 				div.image
-					+animate(tada, 1.2s, 0)
+					+animate(tada, 0.6s, 0)
 			div.image
 				background:
 					repeat: no-repeat
@@ -221,6 +224,7 @@ section.information
 			image: url("../images/advocaat.png")
 			repeat: no-repeat
 			position: top right
+		@include background-image-retina("../images/advocaat", "png", 275px, 314px)
 		padding-top: 314px
 		height: 0
 		overflow: hidden
@@ -316,4 +320,4 @@ section.contact
 			margin-bottom: $margin
 			line-height: 1.5em
 			a.button
-				display: inlineblock
+				display: inline-block
