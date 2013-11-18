@@ -1,5 +1,5 @@
 $margin: 15px
-$font_size: 16px
+$font_size: 18px
 
 $blue:       #4fc1e9
 $lightBlue:  #a2c8f5
@@ -20,3 +20,7 @@ $body_font: "Roboto", sans-serif
 		&
 			background-image: url($file + '@2x.' + $type)
 			background-size: $width $height
+
+@mixin font-smoothing($value: antialiased)
+	-webkit-font-smoothing: $value
+	font-smoothing: $value

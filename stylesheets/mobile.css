@@ -3194,22 +3194,27 @@ h3 {
 }
 
 /* line 34, ../sass/mobile.sass */
+body {
+  font-size: 15px;
+}
+
+/* line 37, ../sass/mobile.sass */
 .page_menu {
   display: none;
 }
 
-/* line 38, ../sass/mobile.sass */
+/* line 41, ../sass/mobile.sass */
 header h1 {
   padding-top: 20px;
 }
-/* line 40, ../sass/mobile.sass */
+/* line 43, ../sass/mobile.sass */
 header .headerVisual {
   width: 60%;
   margin: auto;
   float: none;
   display: block;
 }
-/* line 45, ../sass/mobile.sass */
+/* line 48, ../sass/mobile.sass */
 header .slogan {
   display: block;
   width: 90%;
@@ -3217,32 +3222,32 @@ header .slogan {
   float: none;
   text-align: center;
 }
-/* line 51, ../sass/mobile.sass */
+/* line 54, ../sass/mobile.sass */
 header .slogan h2 {
   margin-bottom: 20px;
 }
-/* line 53, ../sass/mobile.sass */
+/* line 56, ../sass/mobile.sass */
 header .slogan a.button {
   margin-right: 0;
 }
-/* line 55, ../sass/mobile.sass */
+/* line 58, ../sass/mobile.sass */
 header .slogan a.moreInfo {
   display: block;
   padding: 10px;
 }
 
-/* line 60, ../sass/mobile.sass */
+/* line 63, ../sass/mobile.sass */
 section.explanation h2 {
   padding-top: 40px;
 }
-/* line 63, ../sass/mobile.sass */
+/* line 66, ../sass/mobile.sass */
 section.explanation ol li {
   float: none;
   width: 90%;
   margin: 0 0 20px 0;
   text-align: left;
 }
-/* line 68, ../sass/mobile.sass */
+/* line 71, ../sass/mobile.sass */
 section.explanation ol li div.image {
   display: inline-block;
   padding-top: 50px;
@@ -3251,35 +3256,35 @@ section.explanation ol li div.image {
   margin: auto 20px auto auto;
   float: left;
 }
-/* line 75, ../sass/mobile.sass */
+/* line 78, ../sass/mobile.sass */
 section.explanation ol li span {
   font-size: 0.9em;
 }
-/* line 77, ../sass/mobile.sass */
+/* line 80, ../sass/mobile.sass */
 section.explanation ol li.lawyer {
   min-width: 75px;
 }
-/* line 79, ../sass/mobile.sass */
+/* line 82, ../sass/mobile.sass */
 section.explanation ol li.lawyer div.image {
   width: 75px;
 }
 
-/* line 83, ../sass/mobile.sass */
+/* line 86, ../sass/mobile.sass */
 section.information div.content {
   width: 100%;
   float: none;
   margin: 20px auto auto auto;
 }
-/* line 87, ../sass/mobile.sass */
+/* line 90, ../sass/mobile.sass */
 section.information div.content h2 {
   width: 100%;
 }
-/* line 89, ../sass/mobile.sass */
+/* line 92, ../sass/mobile.sass */
 section.information .lawyer {
   display: none;
 }
 
-/* line 93, ../sass/mobile.sass */
+/* line 96, ../sass/mobile.sass */
 section.product .terms, section.product .contract {
   float: none;
   width: 90%;
@@ -3287,13 +3292,13 @@ section.product .terms, section.product .contract {
   padding-bottom: 40px;
   margin-bottom: 40px;
 }
-/* line 99, ../sass/mobile.sass */
+/* line 102, ../sass/mobile.sass */
 section.product .terms .product, section.product .contract .product {
   padding-top: 200px;
   width: 163px;
   background-size: cover;
 }
-/* line 103, ../sass/mobile.sass */
+/* line 106, ../sass/mobile.sass */
 section.product .terms .product .price_tag, section.product .contract .product .price_tag {
   position: absolute;
   -webkit-border-radius: 50%;
@@ -3308,38 +3313,38 @@ section.product .terms .product .price_tag, section.product .contract .product .
   font-size: 0.7em;
   border-width: 3px;
 }
-/* line 112, ../sass/mobile.sass */
+/* line 115, ../sass/mobile.sass */
 section.product .terms h3, section.product .contract h3 {
   margin-top: 20px;
 }
-/* line 114, ../sass/mobile.sass */
+/* line 117, ../sass/mobile.sass */
 section.product .terms {
   border-bottom: 1px solid #fffefe;
 }
 
-/* line 117, ../sass/mobile.sass */
+/* line 120, ../sass/mobile.sass */
 section.testimonial blockquote {
   margin-bottom: 40px;
 }
-/* line 119, ../sass/mobile.sass */
+/* line 122, ../sass/mobile.sass */
 section.testimonial blockquote p {
   font-size: 1.5em;
 }
 
-/* line 122, ../sass/mobile.sass */
+/* line 125, ../sass/mobile.sass */
 section.contact {
   width: 90%;
   margin: auto;
 }
-/* line 126, ../sass/mobile.sass */
+/* line 129, ../sass/mobile.sass */
 section.contact .mail img {
   width: 50%;
 }
-/* line 128, ../sass/mobile.sass */
+/* line 131, ../sass/mobile.sass */
 section.contact .mail h3 {
   font-size: 1.1em;
 }
-/* line 130, ../sass/mobile.sass */
+/* line 133, ../sass/mobile.sass */
 section.contact .mail .button {
   font-size: 0.8em;
   text-overflow: ellipsis;

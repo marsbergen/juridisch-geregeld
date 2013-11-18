@@ -10,7 +10,7 @@ h1, h2, h3
 	font:
 		family: $head_font
 		weight: $head_weight
-		size: 3em
+		size: 4em
 	line-height: 1em
 
 h2
@@ -56,6 +56,7 @@ a
 	white-space: nowrap
 
 html
+	@include font-smoothing
 	background-color: $blue
 	@include transition(all .5s 0s ease-in-out)
 	&[data-waypoint='1']
@@ -74,7 +75,7 @@ html
 body
 	font:
 		family: $body_font
-		size: $font_size
+		size: $font_size 
 	line-height: 1.5em
 	color: $white
 	@include transition(all .5s 0s linear)
@@ -167,6 +168,8 @@ header
 		float: right
 		h2
 			margin-bottom: $margin * 3
+			font:
+				weight: 400
 		.button
 			margin-right: $margin
 
