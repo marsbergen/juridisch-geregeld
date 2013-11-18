@@ -3421,17 +3421,23 @@ header .slogan h2 {
   margin-bottom: 45px;
   font-weight: 400;
 }
-/* line 173, ../sass/main.sass */
+@media screen and (max-width: 1150px) {
+  /* line 169, ../sass/main.sass */
+  header .slogan h2 {
+    font-size: 2em;
+  }
+}
+/* line 175, ../sass/main.sass */
 header .slogan .button {
   margin-right: 15px;
 }
 
-/* line 177, ../sass/main.sass */
+/* line 179, ../sass/main.sass */
 section.explanation h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-/* line 181, ../sass/main.sass */
+/* line 183, ../sass/main.sass */
 section.explanation ol li {
   width: 20%;
   min-width: 136px;
@@ -3440,7 +3446,7 @@ section.explanation ol li {
   color: #fffeff;
   text-align: center;
 }
-/* line 189, ../sass/main.sass */
+/* line 191, ../sass/main.sass */
 section.explanation ol li:hover div.image {
   -webkit-animation: tada 0.6s 0 ease both;
   -moz-animation: tada 0.6s 0 ease both;
@@ -3448,7 +3454,7 @@ section.explanation ol li:hover div.image {
   -o-animation: tada 0.6s 0 ease both;
   animation: tada 0.6s 0 ease both;
 }
-/* line 191, ../sass/main.sass */
+/* line 193, ../sass/main.sass */
 section.explanation ol li div.image {
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -3460,40 +3466,40 @@ section.explanation ol li div.image {
   -o-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 200, ../sass/main.sass */
+/* line 202, ../sass/main.sass */
 section.explanation ol li.questions div.image {
   background-image: url("../images/checklist.png");
 }
-/* line 203, ../sass/main.sass */
+/* line 205, ../sass/main.sass */
 section.explanation ol li.lawyer {
   min-width: 231px;
 }
-/* line 205, ../sass/main.sass */
+/* line 207, ../sass/main.sass */
 section.explanation ol li.lawyer div.image {
   background-image: url("../images/jurist.png");
   width: 231px;
 }
-/* line 210, ../sass/main.sass */
+/* line 212, ../sass/main.sass */
 section.explanation ol li.done div.image {
   background-image: url("../images/klaar.png");
 }
 
-/* line 215, ../sass/main.sass */
+/* line 217, ../sass/main.sass */
 section.information div.content {
   width: 49%;
   float: left;
   margin-left: 9%;
   margin-top: 30px;
 }
-/* line 220, ../sass/main.sass */
+/* line 222, ../sass/main.sass */
 section.information div.content h2 {
   margin-bottom: 30px;
 }
-/* line 222, ../sass/main.sass */
+/* line 224, ../sass/main.sass */
 section.information div.content p {
   width: 90%;
 }
-/* line 224, ../sass/main.sass */
+/* line 226, ../sass/main.sass */
 section.information div.lawyer {
   float: right;
   background-image: url("../images/advocaat.png");
@@ -3515,24 +3521,24 @@ section.information div.lawyer {
   }
 }
 
-/* line 239, ../sass/main.sass */
+/* line 241, ../sass/main.sass */
 section.product h2 {
   padding-top: 60px;
   text-align: center;
   padding-bottom: 30px;
 }
-/* line 243, ../sass/main.sass */
+/* line 245, ../sass/main.sass */
 section.product h3 {
   margin-top: 30px;
 }
-/* line 245, ../sass/main.sass */
+/* line 247, ../sass/main.sass */
 section.product .terms, section.product .contract {
   float: left;
   width: 33%;
   margin: 0 4% 0 12%;
   text-align: center;
 }
-/* line 251, ../sass/main.sass */
+/* line 253, ../sass/main.sass */
 section.product .terms:hover .product, section.product .contract:hover .product {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
@@ -3540,7 +3546,7 @@ section.product .terms:hover .product, section.product .contract:hover .product 
   -o-transform: rotate(5deg);
   transform: rotate(5deg);
 }
-/* line 253, ../sass/main.sass */
+/* line 255, ../sass/main.sass */
 section.product .terms .product, section.product .contract .product {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -3554,7 +3560,7 @@ section.product .terms .product, section.product .contract .product {
   position: relative;
   margin: auto;
 }
-/* line 263, ../sass/main.sass */
+/* line 265, ../sass/main.sass */
 section.product .terms .product .price_tag, section.product .contract .product .price_tag {
   position: absolute;
   right: -30px;
@@ -3578,47 +3584,47 @@ section.product .terms .product .price_tag, section.product .contract .product .
   font-weight: 700;
   font-size: 1.5em;
 }
-/* line 280, ../sass/main.sass */
+/* line 282, ../sass/main.sass */
 section.product .terms h3, section.product .contract h3 {
   margin-top: 60px;
   margin-bottom: 15px;
 }
-/* line 283, ../sass/main.sass */
+/* line 285, ../sass/main.sass */
 section.product .terms p, section.product .contract p {
   min-height: 50px;
 }
 @media screen and (max-width: 1900px) {
-  /* line 283, ../sass/main.sass */
+  /* line 285, ../sass/main.sass */
   section.product .terms p, section.product .contract p {
     min-height: 80px;
   }
 }
 @media screen and (max-width: 1325px) {
-  /* line 283, ../sass/main.sass */
+  /* line 285, ../sass/main.sass */
   section.product .terms p, section.product .contract p {
     min-height: 90px;
   }
 }
 @media screen and (max-width: 1290px) {
-  /* line 283, ../sass/main.sass */
+  /* line 285, ../sass/main.sass */
   section.product .terms p, section.product .contract p {
     min-height: 100px;
   }
 }
-/* line 291, ../sass/main.sass */
+/* line 293, ../sass/main.sass */
 section.product .terms .button, section.product .contract .button {
   margin-top: 30px;
 }
-/* line 293, ../sass/main.sass */
+/* line 295, ../sass/main.sass */
 section.product .contract {
   margin: 0 12% 0 4%;
 }
-/* line 295, ../sass/main.sass */
+/* line 297, ../sass/main.sass */
 section.product .contract .product {
   background-image: url("../images/contract.png");
 }
 
-/* line 300, ../sass/main.sass */
+/* line 302, ../sass/main.sass */
 section.testimonial blockquote {
   margin-left: auto;
   margin-right: auto;
@@ -3627,7 +3633,7 @@ section.testimonial blockquote {
   text-align: center;
   width: 80%;
 }
-/* line 308, ../sass/main.sass */
+/* line 310, ../sass/main.sass */
 section.testimonial blockquote p {
   display: block;
   text-align: center;
@@ -3635,34 +3641,34 @@ section.testimonial blockquote p {
   font-size: 2.25em;
   line-height: 1.25em;
 }
-/* line 315, ../sass/main.sass */
+/* line 317, ../sass/main.sass */
 section.testimonial blockquote footer {
   padding-top: 15px;
   font-size: 1em;
 }
 
-/* line 320, ../sass/main.sass */
+/* line 322, ../sass/main.sass */
 section.contact h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 323, ../sass/main.sass */
+/* line 325, ../sass/main.sass */
 section.contact .mail {
   width: 80%;
   margin: auto;
   text-align: center;
 }
-/* line 327, ../sass/main.sass */
+/* line 329, ../sass/main.sass */
 section.contact .mail img {
   width: 300px;
 }
-/* line 329, ../sass/main.sass */
+/* line 331, ../sass/main.sass */
 section.contact .mail h3 {
   margin-top: 30px;
   margin-bottom: 15px;
   line-height: 1.5em;
 }
-/* line 333, ../sass/main.sass */
+/* line 335, ../sass/main.sass */
 section.contact .mail h3 a.button {
   display: inline-block;
 }
