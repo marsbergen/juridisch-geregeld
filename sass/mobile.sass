@@ -26,6 +26,8 @@ h3
 .container
 	min-width: inherit
 	width: 80%
+	&.mobile
+		width: 100%
 
 .mobile_clear
 	clear: both
@@ -36,6 +38,16 @@ body
 
 .page_menu
 	display: none
+
+.top_menu
+	background-color: $blue
+	ul li a
+		display: block
+		text-align: center
+		color: $white
+		// padding: $margin / 2 $margin
+		// display: inline-block
+		font-size: 1em
 
 header
 	h1
@@ -108,8 +120,8 @@ section.product
 				@include border-radius(50%)
 				width: 40px
 				line-height: 40px
-				right: 0px
-				bottom: 0px
+				right: -10px
+				bottom: -10px
 				font-size: 0.7em
 				border-width: 3px
 		p
@@ -135,3 +147,22 @@ section.contact
 		.button
 			font-size: .8em
 			text-overflow: ellipsis
+
+section.onze-voorwaarden
+	width: auto
+	margin: 0
+	padding: $margin * 2 
+	&:before
+		display: none
+
+footer
+	width: 100%
+	small
+		float: none
+		display: block
+		border-right: 0
+	nav
+		margin-top: $margin
+		float: none
+		li
+			float: none

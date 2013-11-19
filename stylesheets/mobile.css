@@ -3186,35 +3186,51 @@ h3 {
   min-width: inherit;
   width: 80%;
 }
+/* line 29, ../sass/mobile.sass */
+.container.mobile {
+  width: 100%;
+}
 
-/* line 30, ../sass/mobile.sass */
+/* line 32, ../sass/mobile.sass */
 .mobile_clear {
   clear: both;
   float: none;
 }
 
-/* line 34, ../sass/mobile.sass */
+/* line 36, ../sass/mobile.sass */
 body {
   font-size: 15px;
 }
 
-/* line 37, ../sass/mobile.sass */
+/* line 39, ../sass/mobile.sass */
 .page_menu {
   display: none;
 }
 
-/* line 41, ../sass/mobile.sass */
+/* line 42, ../sass/mobile.sass */
+.top_menu {
+  background-color: #4fc1e9;
+}
+/* line 44, ../sass/mobile.sass */
+.top_menu ul li a {
+  display: block;
+  text-align: center;
+  color: #fffefe;
+  font-size: 1em;
+}
+
+/* line 53, ../sass/mobile.sass */
 header h1 {
   padding-top: 20px;
 }
-/* line 43, ../sass/mobile.sass */
+/* line 55, ../sass/mobile.sass */
 header .headerVisual {
   width: 60%;
   margin: auto;
   float: none;
   display: block;
 }
-/* line 48, ../sass/mobile.sass */
+/* line 60, ../sass/mobile.sass */
 header .slogan {
   display: block;
   width: 90%;
@@ -3222,32 +3238,32 @@ header .slogan {
   float: none;
   text-align: center;
 }
-/* line 54, ../sass/mobile.sass */
+/* line 66, ../sass/mobile.sass */
 header .slogan h2 {
   margin-bottom: 20px;
 }
-/* line 56, ../sass/mobile.sass */
+/* line 68, ../sass/mobile.sass */
 header .slogan a.button {
   margin-right: 0;
 }
-/* line 58, ../sass/mobile.sass */
+/* line 70, ../sass/mobile.sass */
 header .slogan a.moreInfo {
   display: block;
   padding: 10px;
 }
 
-/* line 63, ../sass/mobile.sass */
+/* line 75, ../sass/mobile.sass */
 section.explanation h2 {
   padding-top: 40px;
 }
-/* line 66, ../sass/mobile.sass */
+/* line 78, ../sass/mobile.sass */
 section.explanation ol li {
   float: none;
   width: 90%;
   margin: 0 0 20px 0;
   text-align: left;
 }
-/* line 71, ../sass/mobile.sass */
+/* line 83, ../sass/mobile.sass */
 section.explanation ol li div.image {
   display: inline-block;
   padding-top: 50px;
@@ -3256,35 +3272,35 @@ section.explanation ol li div.image {
   margin: auto 20px auto auto;
   float: left;
 }
-/* line 78, ../sass/mobile.sass */
+/* line 90, ../sass/mobile.sass */
 section.explanation ol li span {
   font-size: 0.9em;
 }
-/* line 80, ../sass/mobile.sass */
+/* line 92, ../sass/mobile.sass */
 section.explanation ol li.lawyer {
   min-width: 75px;
 }
-/* line 82, ../sass/mobile.sass */
+/* line 94, ../sass/mobile.sass */
 section.explanation ol li.lawyer div.image {
   width: 75px;
 }
 
-/* line 86, ../sass/mobile.sass */
+/* line 98, ../sass/mobile.sass */
 section.information div.content {
   width: 100%;
   float: none;
   margin: 20px auto auto auto;
 }
-/* line 90, ../sass/mobile.sass */
+/* line 102, ../sass/mobile.sass */
 section.information div.content h2 {
   width: 100%;
 }
-/* line 92, ../sass/mobile.sass */
+/* line 104, ../sass/mobile.sass */
 section.information .lawyer {
   display: none;
 }
 
-/* line 96, ../sass/mobile.sass */
+/* line 108, ../sass/mobile.sass */
 section.product .terms, section.product .contract {
   float: none;
   width: 90%;
@@ -3292,13 +3308,13 @@ section.product .terms, section.product .contract {
   padding-bottom: 40px;
   margin-bottom: 40px;
 }
-/* line 102, ../sass/mobile.sass */
+/* line 114, ../sass/mobile.sass */
 section.product .terms .product, section.product .contract .product {
   padding-top: 200px;
   width: 163px;
   background-size: cover;
 }
-/* line 106, ../sass/mobile.sass */
+/* line 118, ../sass/mobile.sass */
 section.product .terms .product .price_tag, section.product .contract .product .price_tag {
   position: absolute;
   -webkit-border-radius: 50%;
@@ -3308,48 +3324,79 @@ section.product .terms .product .price_tag, section.product .contract .product .
   border-radius: 50%;
   width: 40px;
   line-height: 40px;
-  right: 0px;
-  bottom: 0px;
+  right: -10px;
+  bottom: -10px;
   font-size: 0.7em;
   border-width: 3px;
 }
-/* line 115, ../sass/mobile.sass */
+/* line 127, ../sass/mobile.sass */
 section.product .terms p, section.product .contract p {
   min-height: 70px;
 }
-/* line 117, ../sass/mobile.sass */
+/* line 129, ../sass/mobile.sass */
 section.product .terms h3, section.product .contract h3 {
   margin-top: 20px;
 }
-/* line 119, ../sass/mobile.sass */
+/* line 131, ../sass/mobile.sass */
 section.product .terms {
   border-bottom: 1px solid #fffefe;
 }
 
-/* line 122, ../sass/mobile.sass */
+/* line 134, ../sass/mobile.sass */
 section.testimonial blockquote {
   margin-bottom: 40px;
 }
-/* line 124, ../sass/mobile.sass */
+/* line 136, ../sass/mobile.sass */
 section.testimonial blockquote p {
   font-size: 1.5em;
 }
 
-/* line 127, ../sass/mobile.sass */
+/* line 139, ../sass/mobile.sass */
 section.contact {
   width: 90%;
   margin: auto;
 }
-/* line 131, ../sass/mobile.sass */
+/* line 143, ../sass/mobile.sass */
 section.contact .mail img {
   width: 50%;
 }
-/* line 133, ../sass/mobile.sass */
+/* line 145, ../sass/mobile.sass */
 section.contact .mail h3 {
   font-size: 1.1em;
 }
-/* line 135, ../sass/mobile.sass */
+/* line 147, ../sass/mobile.sass */
 section.contact .mail .button {
   font-size: 0.8em;
   text-overflow: ellipsis;
+}
+
+/* line 151, ../sass/mobile.sass */
+section.onze-voorwaarden {
+  width: auto;
+  margin: 0;
+  padding: 20px;
+}
+/* line 155, ../sass/mobile.sass */
+section.onze-voorwaarden:before {
+  display: none;
+}
+
+/* line 158, ../sass/mobile.sass */
+footer {
+  width: 100%;
+}
+/* line 160, ../sass/mobile.sass */
+footer small {
+  float: none;
+  display: block;
+  border-right: 0;
+}
+/* line 164, ../sass/mobile.sass */
+footer nav {
+  margin-top: 10px;
+  float: none;
+}
+/* line 167, ../sass/mobile.sass */
+footer nav li {
+  float: none;
 }

@@ -53,6 +53,12 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	$(".order").click(function(ev) {
+		ev.preventDefault();
+
+		$(".order_form").addClass('active');
+	})
 });
 
 $(window).resize(function() {

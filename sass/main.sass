@@ -32,7 +32,7 @@ h3
 a
 	color: $white
 	text-decoration: none
-	@include transition(all .5s)
+	@include transition(all .5s 0s ease-in-out)
 	cursor: pointer
 
 .button
@@ -43,7 +43,7 @@ a
 	font-size: 1.15em
 	color: $white
 	@include border-radius(5px)
-	@include transition(all .5s)
+	@include transition(all .5s 0s ease-in-out)
 	background-color: rgba(0,0,0,0.1)
 	&:hover
 		background-color: rgba(0,0,0,0.15)
@@ -58,6 +58,7 @@ a
 html
 	@include font-smoothing 
 	background-color: $blue
+	color: $white
 	&[data-waypoint='1'] body
 		background-color: $blue
 	&[data-waypoint='2'] body
@@ -68,6 +69,9 @@ html
 		background-color: $pink
 	&[data-waypoint='5'] body
 		background-color: $lightRed
+		section.product .terms .product .price_tag, section.product .contract .product .price_tag
+			color: darken($lightRed, 7%) 
+			border-color: rgba(darken($lightRed, 7%), 0.9)
 	&[data-waypoint='6'] body
 		background-color: $lightGreen
 
@@ -82,7 +86,7 @@ body
 
 header, section
 	margin-bottom: 1000px
-	@include transition(all .1s 0s linear)
+	@include transition(all .5s 0s ease-in-out)
 
 .container
 	width: 90%
@@ -150,6 +154,18 @@ header, section
 	padding-right: 15px
 	visibility: visible
 
+.top_menu
+	background-color: $white
+	position: relative
+	left: 0
+	right: 0
+	top: 0
+	ul li a
+		color: $blue
+		padding: $margin / 2 $margin
+		display: inline-block
+		font-size: 0.75em
+
 header
 	h1
 		margin-bottom: $margin * 4
@@ -197,7 +213,7 @@ section.explanation
 				padding-top: 205px
 				width: 136px
 				margin: auto auto $margin * 2 auto
-				@include transition(all .8s)
+				@include transition(all .8s 0s ease-in-out)
 		li.questions 
 			div.image
 				background:
@@ -253,7 +269,7 @@ section.product
 			.product
 				@include rotate(5deg)
 		.product
-			@include transition(all .2s)
+			@include transition(all 0.2s 0s ease-in-out)
 			background:
 				image: url("../images/terms.png")
 				repeat: no-repeat
@@ -271,10 +287,11 @@ section.product
 				line-height: 75px
 				text-align: center
 				color: darken($pink, 20%) 
-				border: 6px solid rgba($pink, .7)
+				border: 6px solid rgba(darken($pink, 20%), 0.9)
 				background-color: $white
-				background-color: rgba($white, .8)
-				@include box-shadow(rgba($darkBlue, .3) 2px 2px 0px 0px) 
+				background-color: rgba($white, 0.9)
+				@include transition(all 0.2s 0s ease-in-out)
+				@include box-shadow(rgba($darkBlue, 0.3) 2px 2px 0px 0px) 
 				font:
 					family: $head_font
 					weight: $head_weight
@@ -334,3 +351,114 @@ section.contact
 			line-height: 1.5em
 			a.button
 				display: inline-block
+
+section.onze-voorwaarden
+	width: 750px
+	padding: $margin * 4 
+	margin: $margin * 4 auto auto auto
+	font-size: 0.9em
+	line-height: 1.6em
+	background-color: $white
+	color: darken($purple, 20%)
+	position: relative
+	&:before
+		display: block
+		position: absolute
+		top: -21px
+		left: 0
+		content: ""
+		width: 100%
+		height: 0
+		overflow: hidden
+		padding-top: 21px
+		background:
+			image: url('../images/docs-top.png')
+			repeat: no-repeat
+			size: 100% 100%
+
+	h1
+		padding-top: $margin
+		font-size: 2em
+		text-align: center
+		margin-bottom: $margin 
+	h2
+		margin-top: $margin * 2
+		font-size: 1.6em
+	small
+		font-weight: bold
+		margin-bottom: $margin
+		display: block
+		text-align: left
+	ol
+		list-style: decimal
+		padding-left: 30px
+	p
+		margin-bottom: $margin
+
+div.order_form
+	width: 750px
+	padding: $margin * 4 
+	margin: $margin * 4 auto auto -375px - ($margin * 4)
+	font-size: 0.9em
+	line-height: 1.6em
+	position: fixed
+	bottom: 0
+	top: 100%
+	left: 50%
+	background-color: $white
+	color: darken($purple, 20%)
+	@include transition(all .5s 0s ease-in-out)
+	&.active
+		top: 25px
+	&:before
+		display: block
+		position: absolute
+		top: -21px
+		left: 0
+		content: ""
+		width: 100%
+		height: 0
+		overflow: hidden
+		padding-top: 21px
+		background:
+			image: url('../images/docs-top.png')
+			repeat: no-repeat
+			size: 100% 100%
+
+	h1
+		padding-top: $margin
+		font-size: 2em
+		text-align: center
+		margin-bottom: $margin 
+	h2
+		margin-top: $margin * 2
+		font-size: 1.6em
+	small
+		font-weight: bold
+		margin-bottom: $margin
+		display: block
+		text-align: left
+	ol
+		list-style: decimal
+		padding-left: 30px
+	p
+		margin-bottom: $margin
+
+footer
+	width: 450px
+	margin: auto
+	font-size: 0.6em
+	padding-bottom: $margin
+	line-height: 1.4em
+	small
+		display: inline-block
+		border-right: 1px solid $white
+		float: left
+		margin-right: $margin
+		padding-right: $margin
+	nav
+		float: left
+		padding: 0
+		li
+			padding: 0
+			float: left
