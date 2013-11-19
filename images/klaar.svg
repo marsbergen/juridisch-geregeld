@@ -1,45 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="139px" height="170px" viewBox="0 0 139 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <title>klaar</title>
-    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
-    <defs>
-        <filter x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0.262745098   0 0 0 0 0.650980392   0 0 0 0 0.784313725  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-        <filter x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="3" dy="1.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0.262745098   0 0 0 0 0.650980392   0 0 0 0 0.784313725  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-        <path id="path-3" d="M18,58 L9,67.0337113 L0,76 L18,76 L18,58"></path>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="website" sketch:type="MSArtboardGroup" transform="translate(-972.000000, -892.000000)">
-            <g id="in-3-stappen" sketch:type="MSLayerGroup" transform="translate(134.000000, 760.000000)">
-                <g id="klaar" transform="translate(838.726722, 132.000000)">
-                    <path d="M30.8371948,2.98192567 C30.8652162,2.98192567 30.8932376,2.98192567 30.9222252,2.98289193 L108.116327,4.3279187 C110.931993,4.37623145 113.173705,6.85467518 113.12056,9.86262658 L112.472203,88.2027062 L67.8853389,114.101235 L24.226079,86.9900563 L25.7266728,8.34077517 C25.7778843,5.36277766 28.0582458,2.98192567 30.8371948,2.98192567 M30.8371948,1.04941594 C27.0233868,1.04941594 23.8646996,4.30569484 23.794163,8.30695625 L22.2732779,88.0519704 L23.2066801,88.6326896 L67.85152,116.355508 L113.44329,89.8743271 L114.395051,89.3206631 L115.05307,9.87905291 C115.086889,7.94944194 114.402781,6.10003013 113.128291,4.68929802 C111.819981,3.24378074 110.052701,2.42826163 108.151112,2.39540897 L30.9560441,1.05134845 L30.8371948,1.04941594" id="Imported-Layers" fill="#43A6C9" sketch:type="MSShapeGroup"></path>
-                    <path d="M0,80 L0,162.291892 C0,165.444195 2.13309782,168 4.76425049,168 L129.23575,168 C131.866902,168 134,165.444195 134,162.291892 L134,80 L66.045279,121.041951 L0,80 Z" id="Fill-1" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup"></path>
-                    <path d="M107.82022,1.39240025 L27.9289454,0.000765011626 C25.0142569,-0.0500062804 22.607364,2.43274157 22.552915,5.54569843 L21,86.9421733 L66.1840683,115 L112.32771,88.1970557 L112.99906,7.12119017 C113.05351,4.00823331 110.734433,1.44316326 107.82022,1.39240025 Z M90.5064541,20.9990458 C95.1048006,21.0806537 95.1937278,15.9007425 90.5953812,15.8191345 L44.4935459,15.0009542 C39.8951994,14.9193463 39.8062722,20.0992575 44.4046188,20.1808655 L90.5064541,20.9990458 Z M99.7754868,84.9166957 L104.243748,84.9996244 C106.545464,85.0423432 106.60482,81.4266478 104.303104,81.3839291 L34.2245132,80.0833043 L29.7562522,80.0003756 C27.4545362,79.9576568 27.3951797,83.5733522 29.6968958,83.6160709 L99.7754868,84.9166957 Z M99.7754868,44.9166957 L104.243748,44.9996244 C106.545464,45.0423432 106.60482,41.4266478 104.303104,41.3839291 L34.2245132,40.0833043 L29.7562522,40.0003756 C27.4545362,39.9576568 27.3951797,43.5733522 29.6968958,43.6160709 L99.7754868,44.9166957 Z M100.775487,65.9166957 L105.243748,65.9996244 C107.545464,66.0423432 107.60482,62.4266478 105.303104,62.3839291 L35.2245132,61.0833043 L30.7562522,61.0003756 C28.4545362,60.9576568 28.3951797,64.5733522 30.6968958,64.6160709 L100.775487,65.9166957 Z" id="Fill-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
-                    <path d="M135,76 L117,58 L117,76 L135,76" id="Fill-3" fill="#FFFFFF" filter="url(#filter-2)" sketch:type="MSShapeGroup"></path>
-                    <g id="Fill-4">
-                        <use fill="#FFFFFF" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
-                        <use fill="none" xlink:href="#path-3"></use>
-                        <use fill="none" xlink:href="#path-3"></use>
-                        <use fill="none" xlink:href="#path-3"></use>
-                    </g>
-                    <path d="M45,9 L91,9.94757109" id="Fill-5" fill="#43A6C9" sketch:type="MSShapeGroup"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="139px"
+	 height="170px" viewBox="0 0 139 170" enable-background="new 0 0 139 170" xml:space="preserve">
+<g id="Layer_2">
+</g>
+<g id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+	<g id="XMLID_6_">
+		<g>
+			<path fill="#43A6C9" d="M137.001,82v82.29c0,3.15-2.14,5.71-4.77,5.71H7.761c-2.63,0-4.76-2.56-4.76-5.71V82l66.04,41.04
+				L137.001,82z"/>
+		</g>
+		<g>
+		</g>
+	</g>
+	<g id="XMLID_5_">
+		<g>
+			<polygon fill="#43A6C9" points="138,76 120,76 120,58 			"/>
+		</g>
+		<g>
+		</g>
+	</g>
+	<title>klaar</title>
+	<description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+	<g id="XMLID_3_">
+		<g>
+			<path fill="#FFFFFF" d="M134.73,80v82.29c0,3.15-2.141,5.71-4.771,5.71H5.49c-2.63,0-4.76-2.56-4.76-5.71V80l66.04,41.04
+				L134.73,80z"/>
+		</g>
+		<g>
+		</g>
+	</g>
+	<path id="Imported-Layers" sketch:type="MSShapeGroup" fill="#43A6C9" d="M31.564,2.982c0.028,0,0.056,0,0.085,0.001l77.195,1.345
+		c2.814,0.048,5.057,2.526,5.004,5.535l-0.648,78.34l-44.587,25.898L24.953,86.99l1.501-78.649
+		C26.505,5.363,28.785,2.982,31.564,2.982 M31.564,1.049c-3.814,0-6.973,3.256-7.043,7.258l-1.396,79.255l0.625,0.5l45.125,28.125
+		l45.295-26.312l0.951-0.555l0.658-79.441c0.034-1.93-0.65-3.779-1.924-5.189c-1.309-1.446-3.076-2.261-4.978-2.294L31.683,1.051
+		L31.564,1.049"/>
+	<path fill="#FFFFFF" d="M108.547,1.393L28.656,0.001c-2.915-0.051-5.322,2.432-5.376,5.545l-1.553,81.396L66.911,115l46.144-26.803
+		l0.671-81.076C113.78,4.008,111.461,1.443,108.547,1.393z M45.22,15.001l46.102,0.818c4.598,0.082,4.51,5.261-0.089,5.18
+		l-46.102-0.818C40.533,20.099,40.622,14.919,45.22,15.001z M30.483,40l4.468,0.083l70.078,1.3c2.303,0.043,2.243,3.659-0.059,3.616
+		l-4.469-0.083l-70.078-1.3C28.122,43.573,28.181,39.958,30.483,40z M104.971,85l-4.469-0.083l-70.078-1.3
+		c-2.302-0.043-2.243-3.659,0.059-3.616l4.468,0.083l70.078,1.3C107.332,81.427,107.272,85.042,104.971,85z M105.971,66
+		l-4.469-0.083l-70.078-1.3c-2.302-0.043-2.243-3.659,0.059-3.616l4.468,0.083l70.078,1.3C108.332,62.427,108.272,66.042,105.971,66
+		z"/>
+	<g id="XMLID_4_">
+		<g>
+			<polygon fill="#FFFFFF" points="135.73,76 117.73,76 117.73,58 			"/>
+		</g>
+		<g>
+		</g>
+	</g>
+	<g id="Fill-4">
+		<g sketch:type="MSShapeGroup">
+			<path id="path-3" fill="#FFFFFF" d="M18.727,58l-9,9.034l-9,8.966h18V58"/>
+		</g>
+		<g>
+			<path id="path-3_1_" fill="none" d="M18.727,58l-9,9.034l-9,8.966h18V58"/>
+		</g>
+		<g>
+			<path id="path-3_2_" fill="none" d="M18.727,58l-9,9.034l-9,8.966h18V58"/>
+		</g>
+		<g>
+			<path id="path-3_3_" fill="none" d="M18.727,58l-9,9.034l-9,8.966h18V58"/>
+		</g>
+	</g>
+</g>
 </svg>
