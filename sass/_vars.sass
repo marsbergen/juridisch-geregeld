@@ -24,3 +24,8 @@ $body_font: "Roboto", sans-serif
 @mixin font-smoothing($value: antialiased)
 	-webkit-font-smoothing: $value
 	font-smoothing: $value
+
+@mixin svg-bg($name, $extension: png, $color: transparent, $position: 0 0, $repeat: no-repeat)
+	background-image: url(#{$name}.#{$extension})
+	background-image: url(#{$name}.svg), none
+	// background: none, url(#{$name}.svg) $color, $position $repeat

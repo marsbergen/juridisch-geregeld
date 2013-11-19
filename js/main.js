@@ -71,7 +71,7 @@ $(window).scroll(function() {
 		if($(this).isOnScreen())
 		{
 			var id = $(this).attr('id');
-			window.history.pushState(id, $(this).attr('title'), '#' + id);
+			// window.history.pushState(id, $(this).attr('title'), '#' + id);
 			$(".page_menu li.active").removeClass('active');
 			$('.page_menu li[data-menu-item="' + id + '"]').addClass('active');
 

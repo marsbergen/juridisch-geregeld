@@ -173,14 +173,46 @@ header
 	.headerVisual
 		display: inline-block
 		width: 40%
-		margin: 0 4% 0 8%
+		margin: 0 4% 0 16%
 		float: left
-		img
-			width: 100%
+		position: relative
+		.contract, .terms, .pen
+			position: absolute
+			left: 0
+			top: 0
+			margin-top: 2%
+			display: block
+			width: 40%
+			height: 0
+			padding-top: 48%
+			overflow: hidden
+			@include svg-bg('../images/headerContract')
+			background:
+				repeat: no-repeat
+				size: contain
+			@include transition(all 0.2s 0 ease-in-out)
+		.contract
+			&:hover
+				@include transform3d(translate(-10px, -20px))
+		.terms
+			@include svg-bg('../images/headerAV')
+			left: 37%
+			margin-top: 0
+			&:hover
+				@include transform3d(translate(10px, -20px))
+		.pen
+			@include svg-bg('../images/pen')
+			width: 6%
+			padding-top: 23%
+			margin-top: 20%
+			left: 80%
+			&:hover
+				// @include transform3d(rotate(2deg))
+				+animate(shakeItBaby, .3s, 0, ease-in-out)
 	.slogan
 		display: inline-block
 		width: 30%
-		margin: 3% 12% 0 4%
+		margin: 3% 16% 0 4%
 		float: right
 		h2
 			margin-bottom: $margin * 3
@@ -216,18 +248,15 @@ section.explanation
 				@include transition(all .8s 0s ease-in-out)
 		li.questions 
 			div.image
-				background:
-					image: url("../images/checklist.png")
+				@include svg-bg('../images/checklist')
 		li.lawyer 
 			min-width: 231px
 			div.image
-				background:
-					image: url("../images/jurist.png")
+				@include svg-bg('../images/jurist')
 				width: 231px
 		li.done 
 			div.image
-				background:
-					image: url("../images/klaar.png")
+				@include svg-bg('../images/klaar')
 
 section.information
 	div.content
@@ -242,7 +271,6 @@ section.information
 	div.lawyer
 		float: right
 		background:
-			image: url("../images/advocaat.png")
 			repeat: no-repeat
 			position: top right
 		@include background-image-retina("../images/advocaat", "png", 275px, 314px)
@@ -270,10 +298,9 @@ section.product
 				@include rotate(5deg)
 		.product
 			@include transition(all 0.2s 0s ease-in-out)
+			@include svg-bg('../images/contract', $position: top left)
 			background:
-				image: url("../images/terms.png")
 				repeat: no-repeat
-				position: top left
 			padding-top: 290px
 			width: 236px
 			position: relative
@@ -309,11 +336,10 @@ section.product
 				min-height: 100px
 		.button
 			margin-top: $margin * 2
-	.contract
+	.terms
 		margin: 0 12% 0 4%
 		.product
-			background:
-				image: url("../images/contract.png")
+			@include svg-bg('../images/terms')
 
 section.testimonial
 	blockquote
