@@ -3317,8 +3317,9 @@ header .headerVisual {
   margin: auto;
   float: none;
   display: block;
+  padding-top: 30%;
 }
-/* line 60, ../sass/mobile.sass */
+/* line 61, ../sass/mobile.sass */
 header .slogan {
   display: block;
   width: 90%;
@@ -3326,32 +3327,32 @@ header .slogan {
   float: none;
   text-align: center;
 }
-/* line 66, ../sass/mobile.sass */
+/* line 67, ../sass/mobile.sass */
 header .slogan h2 {
   margin-bottom: 20px;
 }
-/* line 68, ../sass/mobile.sass */
+/* line 69, ../sass/mobile.sass */
 header .slogan a.button {
   margin-right: 0;
 }
-/* line 70, ../sass/mobile.sass */
+/* line 71, ../sass/mobile.sass */
 header .slogan a.moreInfo {
   display: block;
   padding: 10px;
 }
 
-/* line 75, ../sass/mobile.sass */
+/* line 76, ../sass/mobile.sass */
 section.explanation h2 {
   padding-top: 40px;
 }
-/* line 78, ../sass/mobile.sass */
+/* line 79, ../sass/mobile.sass */
 section.explanation ol li {
   float: none;
   width: 90%;
   margin: 0 0 20px 0;
   text-align: left;
 }
-/* line 83, ../sass/mobile.sass */
+/* line 84, ../sass/mobile.sass */
 section.explanation ol li div.image {
   display: inline-block;
   padding-top: 50px;
@@ -3360,35 +3361,35 @@ section.explanation ol li div.image {
   margin: auto 20px auto auto;
   float: left;
 }
-/* line 90, ../sass/mobile.sass */
+/* line 91, ../sass/mobile.sass */
 section.explanation ol li span {
   font-size: 0.9em;
 }
-/* line 92, ../sass/mobile.sass */
+/* line 93, ../sass/mobile.sass */
 section.explanation ol li.lawyer {
   min-width: 75px;
 }
-/* line 94, ../sass/mobile.sass */
+/* line 95, ../sass/mobile.sass */
 section.explanation ol li.lawyer div.image {
   width: 75px;
 }
 
-/* line 98, ../sass/mobile.sass */
+/* line 99, ../sass/mobile.sass */
 section.information div.content {
   width: 100%;
   float: none;
   margin: 20px auto auto auto;
 }
-/* line 102, ../sass/mobile.sass */
+/* line 103, ../sass/mobile.sass */
 section.information div.content h2 {
   width: 100%;
 }
-/* line 104, ../sass/mobile.sass */
+/* line 105, ../sass/mobile.sass */
 section.information .lawyer {
   display: none;
 }
 
-/* line 108, ../sass/mobile.sass */
+/* line 109, ../sass/mobile.sass */
 section.product .terms, section.product .contract {
   float: none;
   width: 90%;
@@ -3396,13 +3397,13 @@ section.product .terms, section.product .contract {
   padding-bottom: 40px;
   margin-bottom: 40px;
 }
-/* line 114, ../sass/mobile.sass */
+/* line 115, ../sass/mobile.sass */
 section.product .terms .product, section.product .contract .product {
   padding-top: 200px;
   width: 163px;
   background-size: cover;
 }
-/* line 118, ../sass/mobile.sass */
+/* line 119, ../sass/mobile.sass */
 section.product .terms .product .price_tag, section.product .contract .product .price_tag {
   position: absolute;
   -webkit-border-radius: 50%;
@@ -3417,74 +3418,74 @@ section.product .terms .product .price_tag, section.product .contract .product .
   font-size: 0.7em;
   border-width: 3px;
 }
-/* line 127, ../sass/mobile.sass */
+/* line 128, ../sass/mobile.sass */
 section.product .terms p, section.product .contract p {
   min-height: 70px;
 }
-/* line 129, ../sass/mobile.sass */
+/* line 130, ../sass/mobile.sass */
 section.product .terms h3, section.product .contract h3 {
   margin-top: 20px;
 }
-/* line 131, ../sass/mobile.sass */
+/* line 132, ../sass/mobile.sass */
 section.product .terms {
   border-bottom: 1px solid #fffefe;
 }
 
-/* line 134, ../sass/mobile.sass */
+/* line 135, ../sass/mobile.sass */
 section.testimonial blockquote {
   margin-bottom: 40px;
 }
-/* line 136, ../sass/mobile.sass */
+/* line 137, ../sass/mobile.sass */
 section.testimonial blockquote p {
   font-size: 1.5em;
 }
 
-/* line 139, ../sass/mobile.sass */
+/* line 140, ../sass/mobile.sass */
 section.contact {
   width: 90%;
   margin: auto;
 }
-/* line 143, ../sass/mobile.sass */
+/* line 144, ../sass/mobile.sass */
 section.contact .mail img {
   width: 50%;
 }
-/* line 145, ../sass/mobile.sass */
+/* line 146, ../sass/mobile.sass */
 section.contact .mail h3 {
   font-size: 1.1em;
 }
-/* line 147, ../sass/mobile.sass */
+/* line 148, ../sass/mobile.sass */
 section.contact .mail .button {
   font-size: 0.8em;
   text-overflow: ellipsis;
 }
 
-/* line 151, ../sass/mobile.sass */
+/* line 152, ../sass/mobile.sass */
 section.onze-voorwaarden {
   width: auto;
   margin: 0;
   padding: 20px;
 }
-/* line 155, ../sass/mobile.sass */
+/* line 156, ../sass/mobile.sass */
 section.onze-voorwaarden:before {
   display: none;
 }
 
-/* line 158, ../sass/mobile.sass */
+/* line 159, ../sass/mobile.sass */
 footer {
   width: 100%;
 }
-/* line 160, ../sass/mobile.sass */
+/* line 161, ../sass/mobile.sass */
 footer small {
   float: none;
   display: block;
   border-right: 0;
 }
-/* line 164, ../sass/mobile.sass */
+/* line 165, ../sass/mobile.sass */
 footer nav {
   margin-top: 10px;
   float: none;
 }
-/* line 167, ../sass/mobile.sass */
+/* line 168, ../sass/mobile.sass */
 footer nav li {
   float: none;
 }
