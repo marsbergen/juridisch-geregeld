@@ -139,11 +139,7 @@ header, section
 	text-decoration: none
 	margin-top: -11px
 	padding: 0 0 5px 0
-	-webkit-transition: all .3s cubic-bezier(.23, 1, .32, 1)
-	-moz-transition: all .3s cubic-bezier(.23, 1, .32, 1)
-	-ms-transition: all .3s cubic-bezier(.23, 1, .32, 1)
-	-o-transition: all .3s cubic-bezier(.23, 1, .32, 1)
-	transition: all .3s cubic-bezier(.23, 1, .32, 1)
+	@include transition(all .3s 0 cubic-bezier(.23, 1, .32, 1))
 	line-height: 32px
 	visibility: hidden
 
@@ -191,24 +187,16 @@ header
 				repeat: no-repeat
 				size: contain
 			@include transition(all 0.2s 0 ease-in-out)
-		.contract
-			&:hover
-				@include transform3d(translate(-10px, -20px))
 		.terms
 			@include svg-bg('../images/headerAV')
 			left: 37%
 			margin-top: 0
-			&:hover
-				@include transform3d(translate(10px, -20px))
 		.pen
 			@include svg-bg('../images/pen')
 			width: 6%
 			padding-top: 23%
 			margin-top: 20%
 			left: 80%
-			&:hover
-				// @include transform3d(rotate(2deg))
-				+animate(shakeItBaby, .3s, 0, ease-in-out)
 	.slogan
 		display: inline-block
 		width: 30%
@@ -235,9 +223,6 @@ section.explanation
 			float: left
 			color: #FFFEFF
 			text-align: center
-			&:hover
-				div.image
-					+animate(tada, 0.6s, 0)
 			div.image
 				background:
 					repeat: no-repeat
@@ -293,9 +278,6 @@ section.product
 		width: 33%
 		margin: 0 4% 0 12%
 		text-align: center
-		&:hover
-			.product
-				@include rotate(5deg)
 		.product
 			@include transition(all 0.2s 0s ease-in-out)
 			@include svg-bg('../images/contract', $position: top left)
@@ -488,3 +470,23 @@ footer
 		li
 			padding: 0
 			float: left
+
+html.no-touch
+	header
+		.headerVisual
+			.contract
+				&:hover
+					@include transform3d(translate(-10px, -20px))
+			.terms
+				&:hover
+					@include transform3d(translate(10px, -20px))
+			.pen
+				&:hover
+					+animate(shakeItBaby, .3s, 0, ease-in-out)
+	section.explanation ol li:hover div.image
+		+animate(tada, 0.6s, 0)
+	section.product
+		.terms, .contract
+			&:hover
+				.product
+					@include rotate(5deg)
