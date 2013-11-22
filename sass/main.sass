@@ -3,6 +3,17 @@
 
 @import "_vars"
 
+.overlay
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	position: fixed
+	background-color: $pink
+	opacity: 0
+	display: none
+	z-index: 200
+
 .clear
 	clear: both
 
@@ -52,6 +63,9 @@ a
 		background-color: rgba(0,0,0,0.3)
 		color: $white
 
+.data-label.lowercased
+	text-transform: lowercase
+
 .splitfix
 	white-space: nowrap
 
@@ -82,11 +96,11 @@ body
 	line-height: 1.5em
 	color: $white
 	background-color: $blue
-	@include transition(all .5s 0s ease-in-out)
+	@include transition(background-color .5s 0s ease-in-out)
 
 header, section
 	margin-bottom: 1000px
-	@include transition(all .5s 0s ease-in-out)
+	// @include transition(all .5s 0s ease-in-out)
 
 .container
 	width: 90%
@@ -279,6 +293,7 @@ section.product
 		margin: 0 4% 0 12%
 		text-align: center
 		.product
+			cursor: pointer
 			@include transition(all 0.2s 0s ease-in-out)
 			@include svg-bg('../images/contract', $position: top left)
 			background:
@@ -322,6 +337,11 @@ section.product
 		margin: 0 12% 0 4%
 		.product
 			@include svg-bg('../images/terms')
+	small
+		font-size: 0.8em
+		text-align: center
+		display: block
+		margin-top: $margin * 2
 
 section.testimonial
 	blockquote
@@ -404,6 +424,8 @@ section.onze-voorwaarden
 		margin-bottom: $margin
 
 div.order_form
+	display: none
+	z-index: 201
 	width: 750px
 	padding: $margin * 4 
 	margin: $margin * 4 auto auto -375px - ($margin * 4)
@@ -415,7 +437,11 @@ div.order_form
 	left: 50%
 	background-color: $white
 	color: darken($purple, 20%)
-	@include transition(all .5s 0s ease-in-out)
+	@include transition(all .5s 0s linear)
+	&.ready
+		display: block
+	&.no_transition
+		@include transition(none)
 	&.active
 		top: 25px
 	&:before
@@ -451,6 +477,96 @@ div.order_form
 		padding-left: 30px
 	p
 		margin-bottom: $margin
+	.note
+		margin: $margin * 2 0
+		text-align: center
+	a
+		color: darken($pink, 20%)
+		text-decoration: underline
+	form
+		width: 90%
+		margin: $margin * 2 auto auto auto
+		small
+			margin-top: $margin * 2
+			text-align: center
+		.form_message
+			text-align: center
+			@include border-radius(5px)
+			padding: $margin / 2
+			min-width: 60%
+			margin: $margin * 2 auto auto auto
+			&.alert
+				color: $lightRed
+				border: 3px solid $lightRed
+		.products
+			margin-top: $margin * 2
+			margin-bottom: $margin * 4
+			text-align: center
+			label.contract, label.terms
+				@include svg-bg('../images/bestelContract')
+				width: 157px
+				padding-top: 191px
+				height: 0
+				display: inline-block
+				cursor: pointer
+				@include opacity(0.3)
+				@include transition(all 0.2s 0s ease-in-out)
+				position: relative
+				.price_tag
+					position: absolute
+					right: -30px
+					bottom: -30px
+					@include border-radius(50%)
+					width: 55px
+					line-height: 55px
+					text-align: center
+					color: darken($pink, 20%) 
+					border: 6px solid rgba(darken($pink, 20%), 0.9)
+					background-color: $white
+					background-color: rgba($white, 0.9)
+					@include transition(all 0.2s 0s ease-in-out)
+					@include box-shadow(rgba($darkBlue, 0.3) 2px 2px 0px 0px) 
+					font:
+						family: $head_font
+						weight: $head_weight
+						size: 1.2em
+			label.contract
+				margin-right: $margin * 6
+			label.terms
+				@include svg-bg('../images/bestelAV')
+			label.active
+				@include opacity(1)
+			input.hibbem_field
+				display: none
+		.field
+			width: 38%
+			float: left
+			margin-left: 7.5%
+			margin-top: $margin
+			&.error
+				input
+					background-color: $lightRed
+			label
+				margin-left: 5%
+			input
+				width: 90%
+				padding: 5%
+				border: 0
+				outline: none
+				font-size: 1em
+				color: $white
+				@include border-radius(25px)
+				background-color: $pink
+				box-shadow: 1px 1px 2px inset rgba(0,0,0,0.15)
+		.buttons
+			text-align: center
+			margin-bottom: $margin * 2
+			input.button
+				font:
+					family: $body_font
+				border-color: $pink
+				color: darken($pink, 20%)
+				background-color: $white
 
 footer
 	width: 450px

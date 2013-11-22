@@ -3415,7 +3415,7 @@ section.product .terms .product .price_tag, section.product .contract .product .
   line-height: 40px;
   right: -10px;
   bottom: -10px;
-  font-size: 0.7em;
+  font-size: 0.9em;
   border-width: 3px;
 }
 /* line 128, ../sass/mobile.sass */
@@ -3471,21 +3471,116 @@ section.onze-voorwaarden:before {
 }
 
 /* line 159, ../sass/mobile.sass */
+div.order_form {
+  width: 100%;
+  padding: 20px 0;
+  margin: 20px 0 0 0;
+  left: 0;
+  right: 0;
+}
+/* line 165, ../sass/mobile.sass */
+div.order_form:before {
+  display: none;
+}
+/* line 167, ../sass/mobile.sass */
+div.order_form.active {
+  top: 0;
+}
+/* line 169, ../sass/mobile.sass */
+div.order_form .inner_box {
+  margin: 0 10px;
+}
+/* line 172, ../sass/mobile.sass */
+div.order_form form .form_message {
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 60%;
+  margin: 20px auto auto auto;
+}
+/* line 178, ../sass/mobile.sass */
+div.order_form form .form_message.alert {
+  color: #f49a6f;
+  border: 3px solid #f49a6f;
+}
+/* line 181, ../sass/mobile.sass */
+div.order_form form .products {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* line 185, ../sass/mobile.sass */
+div.order_form form .products label.contract, div.order_form form .products label.terms {
+  background-image: url(../images/bestelContract.png);
+  background-image: url(../images/bestelContract.svg), none;
+  background-size: cover;
+  width: 75px;
+  padding-top: 92px;
+}
+/* line 190, ../sass/mobile.sass */
+div.order_form form .products label.contract .price_tag, div.order_form form .products label.terms .price_tag {
+  right: -15px;
+  bottom: -15px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 0.9em;
+  border-width: 3px;
+}
+/* line 197, ../sass/mobile.sass */
+div.order_form form .field {
+  width: 90%;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 202, ../sass/mobile.sass */
+div.order_form form .field input {
+  padding: 2% 4%;
+  border: 0;
+  outline: none;
+  font-size: 1em;
+  color: #fffefe;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  background-color: #cda4d6;
+  box-shadow: 1px 1px 2px inset rgba(0, 0, 0, 0.15);
+}
+/* line 211, ../sass/mobile.sass */
+div.order_form form .buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 214, ../sass/mobile.sass */
+div.order_form form .buttons input.button {
+  font-family: "Roboto", sans-serif;
+  border-color: #cda4d6;
+  color: #a65eb6;
+  background-color: #fffefe;
+}
+
+/* line 222, ../sass/mobile.sass */
 footer {
   width: 100%;
 }
-/* line 161, ../sass/mobile.sass */
+/* line 224, ../sass/mobile.sass */
 footer small {
   float: none;
   display: block;
   border-right: 0;
 }
-/* line 165, ../sass/mobile.sass */
+/* line 228, ../sass/mobile.sass */
 footer nav {
   margin-top: 10px;
   float: none;
 }
-/* line 168, ../sass/mobile.sass */
+/* line 231, ../sass/mobile.sass */
 footer nav li {
   float: none;
 }

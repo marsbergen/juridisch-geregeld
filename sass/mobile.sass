@@ -123,7 +123,7 @@ section.product
 				line-height: 40px
 				right: -10px
 				bottom: -10px
-				font-size: 0.7em
+				font-size: 0.9em
 				border-width: 3px
 		p
 			min-height: 70px
@@ -155,6 +155,69 @@ section.onze-voorwaarden
 	padding: $margin * 2 
 	&:before
 		display: none
+
+div.order_form
+	width: 100%
+	padding: $margin * 2 0
+	margin: $margin * 2 0 0 0
+	left: 0
+	right: 0
+	&:before
+		display: none
+	&.active
+		top: 0
+	.inner_box
+		margin: 0 $margin
+	form
+		.form_message
+			text-align: center
+			@include border-radius(5px)
+			padding: $margin / 2
+			min-width: 60%
+			margin: $margin * 2 auto auto auto
+			&.alert
+				color: $lightRed
+				border: 3px solid $lightRed
+		.products
+			margin-top: $margin * 2
+			margin-bottom: $margin * 4
+			text-align: center
+			label.contract, label.terms
+				@include svg-bg('../images/bestelContract')
+				background-size: cover
+				width: 75px
+				padding-top: 92px
+				.price_tag
+					right: -15px
+					bottom: -15px
+					width: 30px
+					line-height: 30px
+					font-size: 0.9em
+					border-width: 3px
+		.field
+			width: 90%
+			float: none
+			margin-left: auto
+			margin-right: auto
+			input
+				padding: 2% 4%
+				border: 0
+				outline: none
+				font-size: 1em
+				color: $white
+				@include border-radius(25px)
+				background-color: $pink
+				box-shadow: 1px 1px 2px inset rgba(0,0,0,0.15)
+		.buttons
+			text-align: center
+			margin-bottom: $margin * 2
+			input.button
+				font:
+					family: $body_font
+				border-color: $pink
+				color: darken($pink, 20%)
+				background-color: $white
+
 
 footer
 	width: 100%
